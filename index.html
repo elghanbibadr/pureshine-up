@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/banner/roof.png" />
+    <title>Pure Shine Cleaning Services</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC97hFBwowRYTtoY8tBd-T7EIeuBVo0Qmw&libraries=places"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="body--wrapper">
+      <section id="banner">
+        <div class="banner--blue">
+          <div class="row">
+            <p class="header--text">Best Cleaning Services In Hamilton</p>
+          </div>
+        </div>
+        <div class="banner--white">
+          <div class="row">
+            <div class="banner__wrapper">
+              <figure class="banner__img--wrapper">
+                <img
+                  src="./assets/banner/logo.png"
+                  alt=""
+                  class="banner__img"
+                />
+              </figure>
+              <div class="hero__actions">
+                <div class="action__reviews">
+                  <a href="#testimonials">
+                    <h1 class="action--title link__hover-effect">
+                      Read Our Reviews
+                    </h1>
+                    <figure class="action__img--wrapper">
+                      <img
+                        src="./assets/banner/star.png"
+                        alt=""
+                        class="action__img"
+                      />
+                      <img
+                        src="./assets/banner/star.png"
+                        alt=""
+                        class="action__img"
+                      />
+                      <img
+                        src="./assets/banner/star.png"
+                        alt=""
+                        class="action__img"
+                      />
+                      <img
+                        src="./assets/banner/star.png"
+                        alt=""
+                        class="action__img"
+                      />
+                      <img
+                        src="./assets/banner/star.png"
+                        alt=""
+                        class="action__img"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="action--separator"></div>
+                <div class="action__call">
+                  <h1 class="action--title">
+                    Call Us To Get Absolute Best Service
+                  </h1>
+                  <figure class="action__img--wrapper">
+                    <h2 class="action__call--number">
+                      <a href="tel:9059515935" class="link__hover-effect">
+                        905-951-5935
+                      </a>
+                    </h2>
+                  </figure>
+                </div>
+              </div>
+              <button class="btn__menu" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="menu__backdrop">
+                <button
+                  class="btn__menu btn__menu--close"
+                  onclick="toggleMenu()"
+                >
+                  <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                  <li class="menu__list">
+                    <a
+                      href="#"
+                      class="menu__link link__hover-effect"
+                      onclick="toggleMenu()"
+                      >HOME</a
+                    >
+                  </li>
+                  <li class="menu__list">
+                    <a
+                      href="#window"
+                      class="menu__link link__hover-effect"
+                      onclick="toggleMenu()"
+                      >ABOUT US</a
+                    >
+                  </li>
+                  <li class="menu__list">
+                    <a
+                      href="#services"
+                      class="menu__link link__hover-effect"
+                      onclick="toggleMenu()"
+                      >SERVICES</a
+                    >
+                  </li>
+                  <li class="menu__list">
+                    <a
+                      href="#contact"
+                      class="menu__link link__hover-effect"
+                      onclick="toggleMenu()"
+                      >CONTACT</a
+                    >
+                  </li>
+                 
+                  <li class="menu__list">
+                    <a class="menu__link no-cursor" onclick="toggleMenu()"
+                      >905-951-5935</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <main>
+        <section id="landing" class="background-image">
+          <div class="overlay"></div>
+          <nav>
+            <div class="nav__container row">
+              <ul class="nav__links">
+                <li>
+                  <a
+                    href="#"
+                    class="nav__link nav__link--active link__hover-effect"
+                  >
+                    HOME
+                  </a>
+                </li>
+                <li>
+                  <a href="#window" class="nav__link link__hover-effect">
+                    ABOUT US
+                  </a>
+                </li>
+                <li>
+                  <a href="#services" class="nav__link link__hover-effect">
+                    SERVICES
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" class="nav__link link__hover-effect">
+                    CONTACT
+                  </a>
+                </li>
+              </ul>
+              <div class="action__reviews">
+                <a href="#testimonials">
+                  <h1 class="action--title link__hover-effect">
+                    Read Our Reviews
+                  </h1>
+                  <figure class="action__img--wrapper">
+                    <img
+                      src="./assets/banner/star.png"
+                      alt=""
+                      class="action__img"
+                    />
+                    <img
+                      src="./assets/banner/star.png"
+                      alt=""
+                      class="action__img"
+                    />
+                    <img
+                      src="./assets/banner/star.png"
+                      alt=""
+                      class="action__img"
+                    />
+                    <img
+                      src="./assets/banner/star.png"
+                      alt=""
+                      class="action__img"
+                    />
+                    <img
+                      src="./assets/banner/star.png"
+                      alt=""
+                      class="action__img"
+                    />
+                  </figure>
+                </a>
+              </div>
+              <button
+                onclick="location.href='#booking'"
+                class="btn__generic"
+                type="button"
+              >
+                BOOK NOW
+              </button>
+            </div>
+          </nav>
+          <header>
+            <div class="row">
+              <h1 class="header__title">
+                Let Your Windows Shine with Pure Shine<br />
+                Hamilton
+              </h1>
+              <p class="header__para">
+                Get sparkling clean windows with the top-rated window cleaning
+                service in Hamilton.
+              </p>
+              <div class="header__btns">
+                <a href="#booking" class="btn__generic"> GET A QUICK QUOTE </a>
+                <a href="tel:9059515935" class="btn__generic">
+                  CALL 905-951-5935
+                </a>
+              </div>
+            </div>
+          </header>
+        </section>
+        <section id="services">
+          <div class="services__container">
+            <div class="row">
+              <h1 class="services--title">Services We Provide</h1>
+              <div class="service--list">
+                <div class="service">
+                  <figure class="service__img--wrapper">
+                    <img
+                      class="service__img"
+                      src="./assets/services/window.png"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="service__title">Window Cleaning</div>
+                </div>
+                <div class="service">
+                  <figure class="service__img--wrapper">
+                    <img
+                      class="service__img"
+                      src="./assets/services/gutter.png"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="service__title">Gutter Cleaning</div>
+                </div>
+                <div class="service">
+                  <figure class="service__img--wrapper">
+                    <img
+                      class="service__img"
+                      src="./assets/services/power.png"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="service__title">Power Washing</div>
+                </div>
+                <div class="service">
+                  <figure class="service__img--wrapper">
+                    <img
+                      class="service__img"
+                      src="./assets/services/house.png"
+                      alt=""
+                    />
+                  </figure>
+                  <div class="service__title">House Washing</div>
+                </div>
+                <a href="christmas-lights.html" target="_blank">
+                  <div class="service">
+                    <figure class="service__img--wrapper">
+                      <img
+                        class="service__img"
+                        src="./assets/services/christmas.png"
+                        alt=""
+                      />
+                    </figure>
+                    <div class="service__title">
+                      Christmas Lighting Installation
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <figure class="background-icon--wrapper">
+              <img
+                class="background-icon"
+                src="./assets/services/background_icon.png"
+                alt=""
+              />
+            </figure>
+          </div>
+        </section>
+        <section id="window">
+          <div class="row">
+            <div class="window__info background-image">
+              <div class="overlay"></div>
+              <div class="window__info--container">
+                <h1 class="window__info--title">Window Cleaning in</h1>
+                <h2 class="window__info--title">Hamilton Made Easy</h2>
+                <ol class="window__list">
+                  <li class="window__list--item">
+                    <span class="window__item--counter"></span>
+                    <div class="window__item--desc">
+                      <h3 class="window__item--header">Contact us</h3>
+                      <p class="window__item--para">
+                        Call us at
+                        <a href="tel:9059515935" class="link__hover-effect"
+                          >905-951-5935</a
+                        >
+                        or
+                        <a href="#booking" class="link__hover-effect"
+                          >fill out our online form</a
+                        >
+                        to schedule an appointment at a time that works best for
+                        you.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="window__list--item">
+                    <span class="window__item--counter"></span>
+                    <div class="window__item--desc">
+                      <h3 class="window__item--header">Receive a quote</h3>
+                      <p class="window__item--para">
+                        Our team will provide you with a free and accurate quote
+                        based on the size and complexity of your window cleaning
+                        needs.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="window__list--item">
+                    <span class="window__item--counter"></span>
+                    <div class="window__item--desc">
+                      <h3 class="window__item--header">Enjoy a Pure Shine</h3>
+                      <p class="window__item--para">
+                        Our team will arrive on time and complete the job
+                        quickly and efficiently, leaving you with crystal-clear
+                        windows.
+                      </p>
+                    </div>
+                  </li>
+                </ol>
+                <button
+                  onclick="location.href='#booking'"
+                  class="btn__generic"
+                  type="button"
+                >
+                  BOOK NOW
+                </button>
+              </div>
+            </div>
+            <figure class="window__img--wrapper">
+              <img
+                src="./assets/window/window.png"
+                alt=""
+                class="window__img"
+              />
+            </figure>
+            <figure class="background-icon--wrapper">
+              <img
+                class="background-icon"
+                src="./assets/window/background_icon.png"
+                alt=""
+              />
+            </figure>
+          </div>
+        </section>
+        <section id="qualities">
+          <div class="row">
+            <h1 class="qualities--title">What Makes Us Different</h1>
+            <div class="qualities--list">
+              <div class="quality">
+                <img
+                  src="./assets/qualities/icon-1.png"
+                  alt=""
+                  class="quality--icon"
+                />
+                <h1 class="quality--title">Satisfaction Guaranteed</h1>
+                <p class="quality--para">
+                  We stand behind our work and guarantee your satisfaction. If
+                  for any reason you're not completely happy with our service,
+                  we will make it right.
+                </p>
+              </div>
+              <div class="quality">
+                <img
+                  src="./assets/qualities/icon-2.png"
+                  alt=""
+                  class="quality--icon"
+                />
+                <h1 class="quality--title">Exceptional Customer Service</h1>
+                <p class="quality--para">
+                  We pride ourselves on providing exceptional customer service
+                  from start to finish. Our team is friendly, professional, and
+                  always happy to answer any questions or concerns you may have.
+                </p>
+              </div>
+              <div class="quality">
+                <img
+                  src="./assets/qualities/icon-3.png"
+                  alt=""
+                  class="quality--icon"
+                />
+                <h1 class="quality--title">Locally Owned and Operated</h1>
+                <p class="quality--para">
+                  As a locally owned and operated business, we are deeply rooted
+                  in the Hamilton community. We take pride in serving our
+                  neighbors and contributing to the local economy.
+                </p>
+              </div>
+              <div class="quality">
+                <img
+                  src="./assets/qualities/icon-4.png"
+                  alt=""
+                  class="quality--icon"
+                />
+                <h1 class="quality--title">Advanced Technology</h1>
+                <p class="quality--para">
+                  Our advanced technology cleans windows quickly and
+                  efficiently, leaving no streaks or smudges for the best client
+                  results.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="testimonials" class="background-image">
+          <div class="overlay"></div>
+          <div class="row">
+            <h1 class="testimonials--title">Hear from our satisfied clients</h1>
+            <h2 class="testimonials--sub-title">Testimonials</h2>
+            <div class="reviews">
+              <div class="review">
+                <div class="review--top">
+                  <img
+                    src="./assets/testimonials/review_icon-2.png"
+                    alt=""
+                    class="review--icon"
+                  />
+                  <div class="review--info">
+                    <div class="review--name">Emily Johnson</div>
+                    <div class="review--stars">
+                      <figure class="review__img--wrapper">
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="review--para">
+                  Their customer service is top-notch. They were able to
+                  accommodate my schedule and exceeded my expectations with
+                  their service.
+                </div>
+              </div>
+              <div class="review">
+                <div class="review--top">
+                  <img
+                    src="./assets/testimonials/review_icon-1.png"
+                    alt=""
+                    class="review--icon"
+                  />
+                  <div class="review--info">
+                    <div class="review--name">Samantha Davis</div>
+                    <div class="review--stars">
+                      <figure class="review__img--wrapper">
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="review--para">
+                  I have been using their cleaning service for months now and
+                  have never been disappointed. Their attention to detail and
+                  consistency is impressive.
+                </div>
+              </div>
+              <div class="review">
+                <div class="review--top">
+                  <img
+                    src="./assets/testimonials/review_icon-3.png"
+                    alt=""
+                    class="review--icon"
+                  />
+                  <div class="review--info">
+                    <div class="review--name">Michael Nguyen</div>
+                    <div class="review--stars">
+                      <figure class="review__img--wrapper">
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="review--para">
+                  I had a last-minute request for a cleaning service and they
+                  were able to fit me in their schedule without issue. Their
+                  team was professional and did an excellent job
+                </div>
+              </div>
+              <div class="review">
+                <div class="review--top">
+                  <img
+                    src="./assets/testimonials/review_icon-4.png"
+                    alt=""
+                    class="review--icon"
+                  />
+                  <div class="review--info">
+                    <div class="review--name">John Smith</div>
+                    <div class="review--stars">
+                      <figure class="review__img--wrapper">
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="review--para">
+                  Professional, friendly, and efficient. They showed up on time
+                  and got the job done quickly. I highly recommend their
+                  service.
+                </div>
+              </div>
+              <div class="review">
+                <div class="review--top">
+                  <img
+                    src="./assets/testimonials/review_icon-1.png"
+                    alt=""
+                    class="review--icon"
+                  />
+                  <div class="review--info">
+                    <div class="review--name">Lisa Brown</div>
+                    <div class="review--stars">
+                      <figure class="review__img--wrapper">
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="review--para">
+                  I was hesitant to hire a window cleaning service, but after
+                  seeing the amazing results from their work, I am now a loyal
+                  customer. They truly go above and beyond to ensure customer
+                  satisfaction.
+                </div>
+              </div>
+              <div class="review">
+                <div class="review--top">
+                  <img
+                    src="./assets/testimonials/review_icon-2.png"
+                    alt=""
+                    class="review--icon"
+                  />
+                  <div class="review--info">
+                    <div class="review--name">James Lee</div>
+                    <div class="review--stars">
+                      <figure class="review__img--wrapper">
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                        <img
+                          src="./assets/banner/star.png"
+                          alt=""
+                          class="review__img"
+                        />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="review--para">
+                  Their team is knowledgeable and experienced. They were able to
+                  answer all of my questions and provide me with helpful tips
+                  for maintaining my windows between cleanings.
+                </div>
+              </div>
+            </div>
+            <div class="slick-controls">
+              <button type="button" class="slide-m-arrow slide-m-prev">
+                ←
+              </button>
+              <div class="slick-controls--dots"></div>
+              <button type="button" class="slide-m-arrow slide-m-next">
+                →
+              </button>
+            </div>
+          </div>
+        </section>
+        <section id="faq">
+          <div class="row">
+            <h1 class="faq--title">Frequently Asked Questions</h1>
+            <div class="questions">
+              <div class="question">
+                <div class="question__top">
+                  <div class="question__circle"></div>
+                  <h1 class="question--title">
+                    How often should I have my windows cleaned?
+                  </h1>
+                  <div class="question__btn">
+                    <div class="question__btn--circle"></div>
+                  </div>
+                </div>
+                <div class="question__bottom">
+                  <p class="question--para">
+                    It depends on your location and individual circumstances,
+                    but we recommend having your windows cleaned at least twice
+                    a year to maintain their appearance and ensure their
+                    longevity.
+                  </p>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question__top">
+                  <div class="question__circle"></div>
+                  <h1 class="question--title">
+                    What kind of equipment do you use?
+                  </h1>
+                  <div class="question__btn">
+                    <div class="question__btn--circle"></div>
+                  </div>
+                </div>
+                <div class="question__bottom">
+                  <p class="question--para">
+                    We use the latest and most advanced cleaning technology,
+                    including water-fed poles and high-quality cleaning
+                    solutions, to guarantee the best results for our clients.
+                  </p>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question__top">
+                  <div class="question__circle"></div>
+                  <h1 class="question--title">Are your cleaners insured?</h1>
+                  <div class="question__btn">
+                    <div class="question__btn--circle"></div>
+                  </div>
+                </div>
+                <div class="question__bottom">
+                  <p class="question--para">
+                    Yes, all of our cleaners are fully insured and bonded for
+                    your peace of mind.
+                  </p>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question__top">
+                  <div class="question__circle"></div>
+                  <h1 class="question--title">
+                    Do you offer any kind of guarantee on your services?
+                  </h1>
+                  <div class="question__btn">
+                    <div class="question__btn--circle"></div>
+                  </div>
+                </div>
+                <div class="question__bottom">
+                  <p class="question--para">
+                    Yes, we offer a satisfaction guarantee on all of our
+                    services. If you are not completely satisfied with the
+                    results, we will come back to fix the issue at no extra
+                    charge.
+                  </p>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question__top">
+                  <div class="question__circle"></div>
+                  <h1 class="question--title">
+                    How do I schedule a cleaning service?
+                  </h1>
+                  <div class="question__btn">
+                    <div class="question__btn--circle"></div>
+                  </div>
+                </div>
+                <div class="question__bottom">
+                  <p class="question--para">
+                    You can easily schedule a cleaning service by calling our
+                    office or filling out our online form. We will work with you
+                    to find a convenient time that fits your schedule.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="background-image">
+          <div class="overlay"></div>
+          <div class="row">
+            <h3 class="contact--title">Contact Us</h3>
+            <h1 class="contact--number">
+              <a href="tel:9059515935" class="link__hover-effect"
+                >905-951-5935</a
+              >
+            </h1>
+          </div>
+        </section>
+        <section id="booking">
+          <div class="row">
+            <form class="booking__form">
+              <h1 class="booking--title">Get a Free Quote</h1>
+              <script
+                charset="utf-8"
+                type="text/javascript"
+                src="//js.hsforms.net/forms/embed/v2.js"
+              ></script>
+              <script>
+                hbspt.forms.create({
+                  region: "na1",
+                  portalId: "24468008",
+                  formId: "1fa3cf7c-1109-41f3-9cc3-49a6a61a16da",
+                });
+              </script>
+
+              <!-- <div class="name-email__container">
+                <input
+                  type="text"
+                  class="booking__input booking__input--name"
+                  name="firstName"
+                  placeholder="First Name"
+                  required
+                />
+                <input
+                  type="text"
+                  class="booking__input booking__input--name"
+                  name="lastName"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+              <input
+                type="tel"
+                class="booking__input booking__input--phone"
+                name="phone"
+                placeholder="Phone"
+                required
+              />
+              <input
+                type="email"
+                class="booking__input booking__input--email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+
+              <input
+                type="text"
+                id="addressInput"
+                class="booking__input booking__input--address"
+                name="address"
+                placeholder="Home Address"
+                required
+              />
+              
+              <fieldset class="booking__input">
+                <legend>Services</legend>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="service-window"
+                    name="service"
+                    value="window"
+                  />
+                  <label for="service-window">Window Cleaning</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    id="service-gutter"
+                    name="service"
+                    value="gutter"
+                  />
+                  <label for="service-gutter">Gutter Cleaning</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="service-power"
+                    name="service"
+                    value="power"
+                  />
+                  <label for="service-power">Power Washing</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="service-house"
+                    name="service"
+                    value="house"
+                  />
+                  <label for="service-house">House Washing</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="service-christmas"
+                    name="service"
+                    value="christmas"
+                  />
+                  <label for="service-christmas"
+                    >Christmas Lights Instillation</label
+                  >
+                </div>
+              </fieldset>
+              <div class="service-date__container">
+                <select
+                  name="service-date-type"
+                  id="service-date-type"
+                  class="booking__input"
+                  data-chosen=""
+                  onchange="this.dataset.chosen = this.value;
+                let specificDate = document.querySelector('#service-date-specific');
+                if (this.value === 'specific') {
+                  specificDate.required = true;
+                } else {
+                  specificDate.required = false;
+                  specificDate.value = ''
+                }
+                "
+                  required
+                >
+                  <option value="" disabled selected>
+                    Preferred Service Date
+                  </option>
+                  <option value="specific">Specific date</option>
+                  <option value="1-week">Within a week</option>
+                  <option value="2-week">Within 2 weeks</option>
+                  <option value="recurring">
+                    I want recurring service dates
+                  </option>
+                </select>
+                <input
+                  type="date"
+                  name="service-date"
+                  id="service-date-specific"
+                  class="booking__input"
+                  required
+                />
+              </div>
+              <button class="btn__generic" type="submit">Book Now</button> -->
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="row">
+          <div class="footer__column footer__titles">
+            <div class="footer__circle">
+              <h3 class="footer--sub-title">Free Estimate</h3>
+            </div>
+            <a href="#booking" class="footer--title">
+              Get Your Free <br />
+              <b>Quote Today</b>
+            </a>
+          </div>
+          <div class="footer__column footer__links">
+            <ul class="footer__links--list">
+              <li>
+                <a href="#" class="footer__link link__hover-effect">Home</a>
+              </li>
+              <li>
+                <a href="#window" class="footer__link link__hover-effect"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#services" class="footer__link link__hover-effect"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="#booking" class="footer__link link__hover-effect"
+                  >Book Now</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column footer__socials">
+            <a
+              href="https://www.instagram.com/pureshine.services/"
+              target="_blank"
+              class="footer__social"
+              ><img
+                src="./assets/footer/instagram-icon.png"
+                alt=""
+                class="footer__social--img"
+            /></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100091786626273"
+              target="_blank"
+              class="footer__social"
+              ><img
+                src="./assets/footer/facebook-icon.png"
+                alt=""
+                class="footer__social--img"
+              />
+            </a>
+            <a
+              href="https://goo.gl/maps/Z9gFATTgS1gEjfHa8"
+              target="_blank"
+              class="footer__social"
+              ><img
+                src="./assets/footer/google_maps_new_logo_icon_159147.png"
+                alt=""
+                class="footer__social--img"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          Copyright &copy; 2023
+          <a
+            href="https://sergiodeguzman.com"
+            class="footer__copyright--link link__hover-effect"
+            >Sergio De Guzman</a
+          >
+          <span id="siteseal"
+            ><script
+              async
+              type="text/javascript"
+              src="https://seal.godaddy.com/getSeal?sealID=KZuZlMCDdR26XydolY3iX93iNY8EZES9fBiX1X7UggUGbYPXMY1ybvpHV9yy"
+            ></script
+          ></span>
+        </div>
+      </footer>
+    </div>
+    <!-- Start of HubSpot Embed Code -->
+    <script
+      type="text/javascript"
+      id="hs-script-loader"
+      async
+      defer
+      src="//js.hs-scripts.com/24468008.js"
+    ></script>
+    <!-- End of HubSpot Embed Code -->
+  </body>
+</html>
