@@ -1394,3 +1394,54 @@ footer .row {
   text-align: center;
   text-transform: uppercase;
 }
+
+.HolidayLightingTitle{
+  font-size: 3rem;
+}
+
+#lightInstallationHero{
+  background-image: url("/assets/chrismasinstallationlight/chrismaslightheader.jpg");
+  padding-top: 5rem;
+  background-repeat: no-repeat;
+ background-size: cover;
+ /* height: 100vh; */
+}
+
+.chrismaslightinstallation__navbar,.cil-bookNow{
+  margin: 20px !important;
+}
+
+
+
+@media screen and (min-width:786px){
+  #lightInstallationHero{
+    display: flex;
+  
+    /* b */   
+  
+  }
+}
+
+
+body{
+  overflow-x: hidden !important;
+}
+
+.cil-nav{
+  /* background-color: red; */
+  /* background-color: #014487; */
+  background-color:  #0060c0 !important;
+}
+
+.cil__form{
+  width: 90%;
+}
+
+.cil-booking{
+  padding-top: 0 !important;
+}
+
+
+.cil-heroDesc{
+  background-color: rgba(0, 0, 0, 0.139);
+}
