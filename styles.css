@@ -1386,3 +1386,11 @@ footer .row {
     font-size: 18px;
   }
 }
+
+
+
+/* styles for the chrismas light installation */
+.lightInstallation{
+  text-align: center;
+  text-transform: uppercase;
+}
