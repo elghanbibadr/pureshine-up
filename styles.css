@@ -1422,7 +1422,10 @@ body{
   background-color:  #0060c0 !important;
 }
 
-
+.cil-callNumber{
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
 .cil__form{
   width: 90%;
 }
@@ -1460,7 +1463,7 @@ body{
   margin-top: 20px;
 }
 
-.callout h2,#gallery h2{
+.callout h2,#gallery h2,#cta h2{
   font-size: 2rem;
   color: #95cd81;
   font-weight: 500;
@@ -1550,4 +1553,75 @@ body{
     display: grid;
     grid-template-columns: repeat(3,1fr);
   }
+}
+
+
+/* CTA */
+#cta{
+  margin-top: 60px;
+  background-image: url(/assets/chrismasinstallationlight/lighting-background.jpg);
+  /* height: 800px; */
+  object-fit: cover; 
+   padding: 20px;
+  /* display: flex; */
+
+  background-repeat: no-repeat;
+}
+.cta-wrraper{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 20px;
+}
+.cta__img{
+  height:500px;
+  border-radius: 10px;
+  width: 400px;
+
+}
+
+.cta__card{
+  background-color: white;
+  /* height: 80%; */
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  /* position: relative;
+  left: -60px; */
+}
+
+.cta__card p{
+ color: #484848;
+}
+
+.cta-wrraper{
+  width: 80%;
+  margin-inline: auto;
+}
+
+#cta button{
+  padding: 10px 14px;
+  border: 2px solid black;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all .4s;
+  margin-block: 16px;
+}
+
+#cta button:hover{
+  background-color: black;
+  color: white;
+}
+
+.cta-featuresList{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 16px;
+}
+
+.cta-featuresList img{
+  height: 60px;
+  width: 60px;
 }
