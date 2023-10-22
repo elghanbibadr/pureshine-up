@@ -1404,7 +1404,6 @@ footer .row {
   padding-top: 5rem;
   background-repeat: no-repeat;
  background-size: cover;
- /* height: 100vh; */
 }
 
 .chrismaslightinstallation__navbar,.cil-bookNow{
@@ -1413,25 +1412,16 @@ footer .row {
 
 
 
-@media screen and (min-width:786px){
-  #lightInstallationHero{
-    display: flex;
-  
-    /* b */   
-  
-  }
-}
-
 
 body{
   overflow-x: hidden !important;
 }
 
 .cil-nav{
-  /* background-color: red; */
-  /* background-color: #014487; */
+
   background-color:  #0060c0 !important;
 }
+
 
 .cil__form{
   width: 90%;
@@ -1444,4 +1434,52 @@ body{
 
 .cil-heroDesc{
   background-color: rgba(0, 0, 0, 0.139);
+}
+
+/* CALLOUT OF CIL */
+
+.callout{
+  padding: 100px 20px;
+  background-color: #f6f6f6;
+  column-gap: 30px;
+  text-align: center;
+}
+
+
+.callout__card{
+  background-color: rgba(189,66,67,255);
+  padding: 10px; 
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+
+}
+
+.callout__titles{
+  margin-top: 20px;
+}
+
+.callout h2{
+  font-size: 2rem;
+  color: #95cd81;
+  margin-bottom: 10px;
+}
+
+.callout p{
+  font-size: 1.1rem;
+  line-height: 1.5em;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width:786px){
+  .callout{
+    display: grid;
+    text-align: left;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #lightInstallationHero{
+    display: flex;
+  }
 }
