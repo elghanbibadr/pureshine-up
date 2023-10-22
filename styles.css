@@ -1428,6 +1428,7 @@ body{
 }
 .cil__form{
   width: 90%;
+  background-color: rgba(189,66,67,255);
 }
 
 .cil-booking{
@@ -1643,3 +1644,8 @@ background-position: center;
   }
 }
 
+
+
+#getaquote{
+  background-color:#95cd81 ;
+}
