@@ -1483,3 +1483,26 @@ body{
     display: flex;
   }
 }
+
+
+/* GALLERY */
+#gallery{
+  display: grid;
+  margin: 20px;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+
+}
+
+#gallery img{
+  width:100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+   height: 100%;
+}
+
+#gallery img:hover{
+  transform: scale(1.1);
+  /* margin: 10px; */
+}
