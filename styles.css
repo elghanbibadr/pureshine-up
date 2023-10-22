@@ -1552,9 +1552,9 @@ background-position: center;
 .cta__img{
   /* height:500px;
   width: 400px; */
-  width: 70%;
+  width: 80%;
   border-radius: 10px;
-
+  justify-self: end;
 }
 
 .cta__card{
@@ -1572,7 +1572,6 @@ background-position: center;
 }
 
 .cta-wrraper{
-  /* width: 80%; */
   /* margin-inline: auto; */
   display: flex;
   flex-direction: column;
@@ -1635,7 +1634,12 @@ background-position: center;
   .cta-wrraper{
     display: grid;
    grid-template-columns: 1fr 1fr ;
+   /* width: 80%; */
+
    gap: 20px;
+  }
+  .cta__card{
+    right: 40px;
   }
 }
 
