@@ -1482,7 +1482,6 @@ body{
 .galleryImages{
   display: grid;
   margin: 20px;
-  /* grid-template-columns: repeat(6,auto); */
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 
   grid-template-rows: auto;
@@ -1503,7 +1502,6 @@ body{
 
 .galleryImages img:hover{
   transform: scale(1.1);
-  /* margin: 10px; */
 }
 
 #gallery h2{
@@ -1538,55 +1536,35 @@ body{
 }
 
 
-/* RESPONSIVNES */
-@media screen and (min-width:786px){
-  .callout{
-    display: grid;
-    text-align: left;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  #lightInstallationHero{
-    display: flex;
-  }
-  #features{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-  }
-}
-
-
 /* CTA */
 #cta{
   margin-top: 60px;
   background-image: url(/assets/chrismasinstallationlight/lighting-background.jpg);
-  /* height: 800px; */
   object-fit: cover; 
    padding: 20px;
-  /* display: flex; */
-
+background-position: center;
   background-repeat: no-repeat;
 }
+
 .cta-wrraper{
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-  gap: 20px;
+
 }
 .cta__img{
-  height:500px;
+  /* height:500px;
+  width: 400px; */
+  width: 70%;
   border-radius: 10px;
-  width: 400px;
 
 }
 
 .cta__card{
   background-color: white;
-  /* height: 80%; */
   text-align: center;
-  padding: 20px;
+  padding: 30px 20px;
+  height:fit-content;
+  position: relative;
+  bottom: 14px;
   border-radius: 10px;
-  /* position: relative;
-  left: -60px; */
 }
 
 .cta__card p{
@@ -1594,8 +1572,11 @@ body{
 }
 
 .cta-wrraper{
-  width: 80%;
-  margin-inline: auto;
+  /* width: 80%; */
+  /* margin-inline: auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #cta button{
@@ -1619,9 +1600,42 @@ body{
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   row-gap: 16px;
+  margin-top: 20px;
 }
 
 .cta-featuresList img{
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
 }
+
+.cta-featuresList h5{
+  color:rgba(189,66,67,255) ;
+
+}
+
+
+
+
+
+/* RESPONSIVNES */
+@media screen and (min-width:786px){
+  .callout{
+    display: grid;
+    text-align: left;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #lightInstallationHero{
+    display: flex;
+  }
+  #features{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .cta-wrraper{
+    display: grid;
+   grid-template-columns: 1fr 1fr ;
+   gap: 20px;
+  }
+}
+
