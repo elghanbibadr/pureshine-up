@@ -1486,10 +1486,12 @@ body{
 
 
 /* GALLERY */
-#gallery{
+.galleryImages{
   display: grid;
   margin: 20px;
-  grid-template-columns: repeat(6,1fr);
+  /* grid-template-columns: repeat(6,auto); */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
   grid-template-rows: auto;
   gap: 10px;
 
@@ -1502,7 +1504,7 @@ body{
    height: 100%;
 }
 
-#gallery img:hover{
+.galleryImages img:hover{
   transform: scale(1.1);
   /* margin: 10px; */
 }
