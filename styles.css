@@ -1719,7 +1719,8 @@ margin-top: 24px;
 
 /* RETOUCHING */
 .cil-navLogo{
-  padding-bottom: 10px !important; 
+  /* padding-bottom: 10px !important;  */
+  height: 80px;
 }
 
 .btn__menu {
@@ -1767,4 +1768,5 @@ font-size: 25px !important;
    display: block;
   }
 }
+
 
