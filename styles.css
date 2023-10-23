@@ -916,7 +916,7 @@ header .row {
 
 /* Footer */
 
-footer {
+.footer {
   height: 456px;
   background: linear-gradient(280.1deg, #000000 -60.23%, #001a34 104.04%);
   display: flex;
@@ -924,7 +924,7 @@ footer {
   padding: 80px 20px 35px 20px;
 }
 
-footer .row {
+.footer .row {
   display: flex;
   align-items: center;
   height: 100%;
@@ -1069,7 +1069,7 @@ footer .row {
     width: 50%;
   }
 
-  footer {
+  .footer {
     padding-top: 40px;
   }
 
@@ -1579,18 +1579,19 @@ background-position: center;
   align-items: center;
 }
 
-#cta button{
+.btn--transparent{
   padding: 10px 14px;
   border: 2px solid black;
   background-color: transparent;
   cursor: pointer;
   font-size: 1.1rem;
+  text-transform: uppercase;
   font-weight: 500;
   transition: all .4s;
   margin-block: 16px;
 }
 
-#cta button:hover{
+.btn--transparent:hover{
   background-color: black;
   color: white;
 }
@@ -1613,6 +1614,97 @@ background-position: center;
 
 }
 
+
+
+
+
+
+
+
+#getaquote{
+  background-color:#2a7d2e;
+  background-image: url(/assets/chrismasinstallationlight/lamps.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 60px;
+  text-align: center;
+}
+
+
+.getaquote__desc{
+  text-align: center;
+  margin-block: 50px;
+  color: white;
+}
+
+.getaquote__desc h2{
+  margin-block: 10px;
+  font-size:2.5rem;
+}
+
+.getaquote__desc p{
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.getaquote__desc {
+ text-align: left;
+}
+
+
+.cil-footer{
+ background-color:#333;
+ background-color: #f6f6f6;
+ padding:33px 20px;
+ /* display: flex; */
+ text-align: center;
+ /* background-color:  rgba(189,66,67,255); */
+ /* color: white; */
+}
+
+.greeandredlogo{
+  height: 300px;
+  /* justify-self: end; */
+}
+
+.contactWrraper{
+  background-color: rgba(189,66,67,255);
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+}
+.contact-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 10px;
+}
+
+.contact-box img{
+  height: 20px;
+  width: 20px;
+  margin-right: 6px;
+}
+
+.social-media img{
+  margin-top: 20px;
+height: 30px;
+cursor: pointer;
+width: 30px;
+margin-left: 10px;
+transition: all .3s ease-in-out;
+}
+
+.social-media img:hover{
+  transform: scale(1.1);
+}
+
+
+
+
+.footer-btn{
+
+}
 
 
 
@@ -1648,36 +1740,10 @@ background-position: center;
     padding: 20px;
     justify-content: center;
   }
-}
 
-
-
-#getaquote{
-  background-color:#2a7d2e;
-  background-image: url(/assets/chrismasinstallationlight/lamps.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-top: 60px;
-  text-align: center;
-}
-
-
-.getaquote__desc{
-  text-align: center;
-  margin-block: 50px;
-  color: white;
-}
-
-.getaquote__desc h2{
-  margin-block: 10px;
-  font-size:2.5rem;
-}
-
-.getaquote__desc p{
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.4;
-}
-.getaquote__desc {
- text-align: left;
+  .cil-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* text-align: left; */
+  }
 }
