@@ -1481,12 +1481,21 @@ body{
 }
 /* CALLOUT OF CIL */
 
+.callout-wrraper{
+  background-color: #f6f6f6;
+
+}
+
 .callout{
-  padding: 100px 20px;
+  padding:  20px;
   background-color: #f6f6f6;
   column-gap: 30px;
   text-align: center;
+  
 }
+
+
+
 
 
 .callout__card{
@@ -1495,7 +1504,8 @@ body{
   border-radius: 10px;
   color: white;
   text-align: center;
-  padding: 40px 20px;
+  padding: 20px;
+  margin-bottom:20px;
 
 }
 
@@ -1514,6 +1524,7 @@ body{
   font-size: 1.1rem;
   line-height: 1.5em;
   margin-bottom: 16px;
+  color:#333;
 }
 
 
@@ -1522,7 +1533,9 @@ body{
 .galleryImages{
   display: grid;
   margin: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(, minmax(200px, 1fr)); */
 
   grid-template-rows: auto;
   gap: 10px;
@@ -1561,9 +1574,12 @@ body{
 .features__card{
  text-align: center;
   margin-block: 40px;
-
+  
 }
 
+.features__card p{
+  color:#333;
+}
 .features__card h4{
   margin-block: 10px;
   color:rgba(189,66,67,255) ;
@@ -1646,7 +1662,7 @@ background-position: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  row-gap: 16px;
+  row-gap: 20px;
   margin-top: 20px;
 }
 
@@ -1763,6 +1779,10 @@ font-size: 25px !important;
 
 /* RESPONSIVNES */
 @media screen and (min-width:786px){
+  .galleryImages{
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+  }
   .callout{
     display: grid;
     text-align: left;
@@ -1801,6 +1821,18 @@ font-size: 25px !important;
   .cil-heroDesc h1{
    font-size:2.3rem;
   }
+
+
+.callout form{
+  position:relative;
+  bottom:130px;
+  width:80%;
+}
 }
 
+
+.container{
+  margin-inline:auto;
+  max-width:1440px;
+}
 

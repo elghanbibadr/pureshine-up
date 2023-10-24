@@ -173,40 +173,7 @@
                       </a>
                     </li>
                   </ul>
-                  <div class="action__reviews">
-                    <a href="#testimonials">
-                      <h1 class="action--title link__hover-effect">
-                        Read Our Reviews
-                      </h1>
-                      <figure class="action__img--wrapper">
-                        <img
-                          src="./assets/banner/star.png"
-                          alt=""
-                          class="action__img"
-                        />
-                        <img
-                          src="./assets/banner/star.png"
-                          alt=""
-                          class="action__img"
-                        />
-                        <img
-                          src="./assets/banner/star.png"
-                          alt=""
-                          class="action__img"
-                        />
-                        <img
-                          src="./assets/banner/star.png"
-                          alt=""
-                          class="action__img"
-                        />
-                        <img
-                          src="./assets/banner/star.png"
-                          alt=""
-                          class="action__img"
-                        />
-                      </figure>
-                    </a>
-                  </div>
+                 
                   <button
                     onclick="location.href='#booking'"
                     class="btn__generic cil-bookNow"
@@ -230,7 +197,7 @@
                         Without the headache
                         </h1>
                     <!-- <div class="header__btns"> -->
-                      <a href="#booking" class=" "><button class="btn btn--red"> FREE ESTIMATE </button> </a>
+                      <a href="#form" class=" "><button class="btn btn--red"> FREE ESTIMATE </button> </a>
                     
                     <!-- </div> -->
                   </div>
@@ -240,190 +207,190 @@
            
               </section> -->
           </section>
-          <section class="callout" id="callout">
-            <!-- cols 1 -->
-        <div class="callout__desc">
-          <div class="callout__titles">
-              <h2>
-                  EXCEPTIONAL HOLIDAY LIGHTING WITH SAME DAY ESTIMATES
-              </h2>
-              <p>Stay off your ladders this season and leave your Christmas lights and outdoor Christmas decorations to our safety-trained team</p>
-          </div>
-          <div class="callout__card">
-              <b>SAVE when you book your holiday lighting early!</b> Early bird offer for new clients: we’ll take down your lights for FREE if you book your 2023 lighting installation before October 31, 2023. Offer applies to your first year of holiday lighting only.
-          </div>
-        </div>
-        <!-- cols2 -->
-        <div class="row"> 
-          <form class="booking__form cil__form" >
-              <h1 class="booking--title">Get a  Quote</h1>
-              <script
-                charset="utf-8"
-                type="text/javascript"
-                src="//js.hsforms.net/forms/embed/v2.js"
-              ></script>
-              <script>
-                hbspt.forms.create({
-                  region: "na1",
-                  portalId: "24468008",
-                  formId: "1fa3cf7c-1109-41f3-9cc3-49a6a61a16da",
-                });
-              </script>
-              <!-- <div class="name-email__container">
-
+            <div class="callout-wrraper">
+            <section class="callout container" id="callout">
+              <!-- cols 1 -->
+                    <div class="callout__desc">
+            <div class="callout__titles">
+                <h2>
+                    EXCEPTIONAL HOLIDAY LIGHTING WITH SAME DAY ESTIMATES
+                </h2>
+                <p>Stay off your ladders this season and leave your Christmas lights and outdoor Christmas decorations to our safety-trained team</p>
+            </div>
+            <div class="callout__card">
+                <b>SAVE when you book your holiday lighting early!</b> Early bird offer for new clients: we’ll take down your lights for FREE if you book your 2023 lighting installation before October 31, 2023. Offer applies to your first year of holiday lighting only.
+            </div>
+                    </div>
+                    <!-- cols2 -->
+                    <div class="row">
+            <form id="form" class="booking__form cil__form" >
+                <h1 class="booking--title">Get a  Quote</h1>
+                <script
+                  charset="utf-8"
+                  type="text/javascript"
+                  src="//js.hsforms.net/forms/embed/v2.js"
+                ></script>
+                <script>
+                  hbspt.forms.create({
+                    region: "na1",
+                    portalId: "24468008",
+                    formId: "1fa3cf7c-1109-41f3-9cc3-49a6a61a16da",
+                  });
+                </script>
+                <!-- <div class="name-email__container">
+                  <input
+                    type="text"
+                    class="booking__input booking__input--name"
+                    name="firstName"
+                    placeholder="First Name"
+                    required
+                  />
+                  <input
+                    type="text"
+                    class="booking__input booking__input--name"
+                    name="lastName"
+                    placeholder="Last Name"
+                    required
+                  />
+                </div>
                 <input
-                  type="text"
-                  class="booking__input booking__input--name"
-                  name="firstName"
-                  placeholder="First Name"
+                  type="tel"
+                  class="booking__input booking__input--phone"
+                  name="phone"
+                  placeholder="Phone"
+                  required
+                />
+                <input
+                  type="email"
+                  class="booking__input booking__input--email"
+                  name="email"
+                  placeholder="Email Address"
                   required
                 />
                 <input
                   type="text"
-                  class="booking__input booking__input--name"
-                  name="lastName"
-                  placeholder="Last Name"
+                  id="addressInput"
+                  class="booking__input booking__input--address"
+                  name="address"
+                  placeholder="Home Address"
                   required
                 />
-              </div>
-              <input
-                type="tel"
-                class="booking__input booking__input--phone"
-                name="phone"
-                placeholder="Phone"
-                required
-              />
-              <input
-                type="email"
-                class="booking__input booking__input--email"
-                name="email"
-                placeholder="Email Address"
-                required
-              />
-              <input
-                type="text"
-                id="addressInput"
-                class="booking__input booking__input--address"
-                name="address"
-                placeholder="Home Address"
-                required
-              />
-
-              <fieldset class="booking__input">
-                <legend>Services</legend>
-                <div>
-                  <input
-                    type="checkbox"
-                    id="service-window"
-                    name="service"
-                    value="window"
-                  />
-                  <label for="service-window">Window Cleaning</label>
-                </div>
-                <div>
-                  <input
-                    type="checkbox"
-                    id="service-gutter"
-                    name="service"
-                    value="gutter"
-                  />
-                  <label for="service-gutter">Gutter Cleaning</label>
-                </div>
-                <div>
-                  <input
-                    type="checkbox"
-                    id="service-power"
-                    name="service"
-                    value="power"
-                  />
-                  <label for="service-power">Power Washing</label>
-                </div>
-                <div>
-                  <input
-                    type="checkbox"
-                    id="service-house"
-                    name="service"
-                    value="house"
-                  />
-                  <label for="service-house">House Washing</label>
-                </div>
-                <div>
-                  <input
-                    type="checkbox"
-                    id="service-christmas"
-                    name="service"
-                    value="christmas"
-                  />
-                  <label for="service-christmas"
-                    >Christmas Lights Instillation</label
+                <fieldset class="booking__input">
+                  <legend>Services</legend>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="service-window"
+                      name="service"
+                      value="window"
+                    />
+                    <label for="service-window">Window Cleaning</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="service-gutter"
+                      name="service"
+                      value="gutter"
+                    />
+                    <label for="service-gutter">Gutter Cleaning</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="service-power"
+                      name="service"
+                      value="power"
+                    />
+                    <label for="service-power">Power Washing</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="service-house"
+                      name="service"
+                      value="house"
+                    />
+                    <label for="service-house">House Washing</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="service-christmas"
+                      name="service"
+                      value="christmas"
+                    />
+                    <label for="service-christmas"
+                      >Christmas Lights Instillation</label
+                    >
+                  </div>
+                </fieldset>
+                <div class="service-date__container">
+                  <select
+                    name="service-date-type"
+                    id="service-date-type"
+                    class="booking__input"
+                    data-chosen=""
+                    onchange="this.dataset.chosen = this.value;
+                  let specificDate = document.querySelector('#service-date-specific');
+                  if (this.value === 'specific') {
+                    specificDate.required = true;
+                  } else {
+                    specificDate.required = false;
+                    specificDate.value = ''
+                  }
+                  "
+                    required
                   >
+                    <option value="" disabled selected>
+                      Preferred Service Date
+                    </option>
+                    <option value="specific">Specific date</option>
+                    <option value="1-week">Within a week</option>
+                    <option value="2-week">Within 2 weeks</option>
+                    <option value="recurring">
+                      I want recurring service dates
+                    </option>
+                  </select>
+                  <input
+                    type="date"
+                    name="service-date"
+                    id="service-date-specific"
+                    class="booking__input"
+                    required
+                  />
                 </div>
-              </fieldset>
-              <div class="service-date__container">
-                <select
-                  name="service-date-type"
-                  id="service-date-type"
-                  class="booking__input"
-                  data-chosen=""
-                  onchange="this.dataset.chosen = this.value;
-                let specificDate = document.querySelector('#service-date-specific');
-                if (this.value === 'specific') {
-                  specificDate.required = true;
-                } else {
-                  specificDate.required = false;
-                  specificDate.value = ''
-                }
-                "
-                  required
-                >
-                  <option value="" disabled selected>
-                    Preferred Service Date
-                  </option>
-                  <option value="specific">Specific date</option>
-                  <option value="1-week">Within a week</option>
-                  <option value="2-week">Within 2 weeks</option>
-                  <option value="recurring">
-                    I want recurring service dates
-                  </option>
-                </select>
-                <input
-                  type="date"
-                  name="service-date"
-                  id="service-date-specific"
-                  class="booking__input"
-                  required
-                />
-              </div>
-              <button class="btn__generic" type="submit">Book Now</button> -->
-            </form>
-          </div> 
-          </section>
+                <button class="btn__generic" type="submit">Book Now</button> -->
+              </form>
+            </div>
+            </section>
+          </div>
             <!-- FEATURE SECTION -->
-            <section id="features">
-                <div class="features__card">
-                    <img src="/assets/chrismasinstallationlight/fullyinsured.svg" alt="fullyinsured icon">
-                    <h4>Fully Insured   </h4>
-                    <p>
-                        Pure Shine Landscaping is fully insured and follows protocols to safely operate.
-                    </p>
-                </div>
-                <div class="features__card">
-                    <img src="/assets/chrismasinstallationlight/lifetimewarranty.svg" alt="lifetimewarranty icon">
-                    <h4>Lifetime Warranty </h4>
-                    <p>
-                        On all lights and products if we are installing and taking them down each year.
-    
-                    </p>
-                </div>
-                <div class="features__card">
-                    <img src="/assets/chrismasinstallationlight/commercialgrad.svg" alt="commercialgrad icon">
-                    <h4>Commercial Grade LED </h4>
-                    <p>
-                        Our products are commercial grade LED lights. Our lights shine brighter than the competition!
-    
-                    </p>
-                </div>
-               </section>
+            <div class=" container">
+              <section id="features" >
+                  <div class="features__card">
+                      <img src="/assets/chrismasinstallationlight/fullyinsured.svg" alt="fullyinsured icon">
+                      <h4>Fully Insured   </h4>
+                      <p>
+                          Pure Shine Landscaping is fully insured and follows protocols to safely operate.
+                      </p>
+                  </div>
+                  <div class="features__card">
+                      <img src="/assets/chrismasinstallationlight/lifetimewarranty.svg" alt="lifetimewarranty icon">
+                      <h4>Lifetime Warranty </h4>
+                      <p>
+                          On all lights and products if we are installing and taking them down each year.
+                      </p>
+                  </div>
+                  <div class="features__card">
+                      <img src="/assets/chrismasinstallationlight/commercialgrad.svg" alt="commercialgrad icon">
+                      <h4>Commercial Grade LED </h4>
+                      <p>
+                          Our products are commercial grade LED lights. Our lights shine brighter than the competition!
+                      </p>
+                  </div>
+                 </section>
+            </div>
     
           <!-- GALLERY -->
           <section id="gallery"> 
