@@ -122,7 +122,7 @@
                       </li>
                       <li class="menu__list">
                         <a
-                          href="#callout"
+                          href="#features"
                           class="menu__link link__hover-effect"
                           onclick="toggleMenu()"
                           >  FEATURES</a
@@ -158,7 +158,7 @@
               </div>
             </div>
             <nav class="cil-nav">
-                <div class="nav__container row cil-nav">
+                <div class="nav__container row ">
                   <ul class="nav__links chrismaslightinstallation__navbar">
                     <li>
                       <a
@@ -169,7 +169,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#callout" class="nav__link link__hover-effect">
+                      <a href="#features" class="nav__link link__hover-effect">
                         FEATURES
                       </a>
                     </li>
@@ -227,145 +227,61 @@
                     </div>
                     <!-- cols2 -->
                     <div class="row">
-            <form id="form" class="booking__form cil__form" >
-                <h1 class="booking--title">Get a  Quote</h1>
-                <script
-                  charset="utf-8"
-                  type="text/javascript"
-                  src="//js.hsforms.net/forms/embed/v2.js"
-                ></script>
-                <script>
-                  hbspt.forms.create({
-                    region: "na1",
-                    portalId: "24468008",
-                    formId: "1fa3cf7c-1109-41f3-9cc3-49a6a61a16da",
-                  });
-                </script>
-                <!-- <div class="name-email__container">
-                  <input
-                    type="text"
-                    class="booking__input booking__input--name"
-                    name="firstName"
-                    placeholder="First Name"
-                    required
-                  />
-                  <input
-                    type="text"
-                    class="booking__input booking__input--name"
-                    name="lastName"
-                    placeholder="Last Name"
-                    required
-                  />
-                </div>
-                <input
-                  type="tel"
-                  class="booking__input booking__input--phone"
-                  name="phone"
-                  placeholder="Phone"
-                  required
-                />
-                <input
-                  type="email"
-                  class="booking__input booking__input--email"
-                  name="email"
-                  placeholder="Email Address"
-                  required
-                />
-                <input
-                  type="text"
-                  id="addressInput"
-                  class="booking__input booking__input--address"
-                  name="address"
-                  placeholder="Home Address"
-                  required
-                />
-                <fieldset class="booking__input">
-                  <legend>Services</legend>
-                  <div>
-                    <input
-                      type="checkbox"
-                      id="service-window"
-                      name="service"
-                      value="window"
-                    />
-                    <label for="service-window">Window Cleaning</label>
-                  </div>
-                  <div>
-                    <input
-                      type="checkbox"
-                      id="service-gutter"
-                      name="service"
-                      value="gutter"
-                    />
-                    <label for="service-gutter">Gutter Cleaning</label>
-                  </div>
-                  <div>
-                    <input
-                      type="checkbox"
-                      id="service-power"
-                      name="service"
-                      value="power"
-                    />
-                    <label for="service-power">Power Washing</label>
-                  </div>
-                  <div>
-                    <input
-                      type="checkbox"
-                      id="service-house"
-                      name="service"
-                      value="house"
-                    />
-                    <label for="service-house">House Washing</label>
-                  </div>
-                  <div>
-                    <input
-                      type="checkbox"
-                      id="service-christmas"
-                      name="service"
-                      value="christmas"
-                    />
-                    <label for="service-christmas"
-                      >Christmas Lights Instillation</label
-                    >
-                  </div>
-                </fieldset>
-                <div class="service-date__container">
-                  <select
-                    name="service-date-type"
-                    id="service-date-type"
-                    class="booking__input"
-                    data-chosen=""
-                    onchange="this.dataset.chosen = this.value;
-                  let specificDate = document.querySelector('#service-date-specific');
-                  if (this.value === 'specific') {
-                    specificDate.required = true;
-                  } else {
-                    specificDate.required = false;
-                    specificDate.value = ''
-                  }
-                  "
-                    required
-                  >
-                    <option value="" disabled selected>
-                      Preferred Service Date
-                    </option>
-                    <option value="specific">Specific date</option>
-                    <option value="1-week">Within a week</option>
-                    <option value="2-week">Within 2 weeks</option>
-                    <option value="recurring">
-                      I want recurring service dates
-                    </option>
-                  </select>
-                  <input
-                    type="date"
-                    name="service-date"
-                    id="service-date-specific"
-                    class="booking__input"
-                    required
-                  />
-                </div>
-                <button class="btn__generic" type="submit">Book Now</button> -->
-              </form>
+                   
+ 
+                      <div class="formcontainer cil__form">
+                        
+
+                        <p class="booking--title cil__form-title">Get a Free Quote</p>
+                        <form class="zapierform" action="https://hooks.zapier.com/hooks/catch/15544183/38musi3/" method="POST">
+                          <div class="field email-field">
+                            <div class="input-field">
+                              <input type="email" placeholder="Email" class="email" />
+                            </div>
+                            <span class="error email-error">
+                              <i class="bx bx-error-circle error-icon"></i>
+                              <p class="error-text">Please enter a valid email</p>
+                            </span>
+                          </div>
+                          
+                          <div class="field name-field">
+                            <div class="input-field">
+                              <input type="text" placeholder="Name" class="name" />
+                            </div>
+                            <span class="error name-error">
+                              <i class="bx bx-error-circle error-icon"></i>
+                              <p class="error-text">Please enter your name</p>
+                            </span>
+                          </div>
+                          <div class="field number-field">
+                            <div class="input-field">
+                              <input type="number" placeholder="Phone" class="phone" />
+                            </div>
+                            <span class="error phone-error">
+                              <i class="bx bx-error-circle error-icon"></i>
+                              <p class="error-text">Please enter your city</p>
+                            </span>
+                          </div>
+                          
+                          <div class="field city-field">
+                            <div class="input-field">
+                              <input type="text" placeholder="City" class="name" />
+                            </div>
+                            <span class="error city-error">
+                              <i class="bx bx-error-circle error-icon"></i>
+                              <p class="error-text">Please enter your city</p>
+                            </span>
+                          </div>
+                          <input type="checkbox" name="agree" id="Iagree"> 
+                        <label class="IagreeLabel" for="Iagree"> I agree to be contacted by Pure Shine</label>
+                       
+                       
+                          <div class="field button-field input-field">
+                            <input type="submit" value="Get a quote" />
+                          </div>
+                        </form>
+                        <p class="formsubmitedmsg">Thanks for submitting the form. We will get back to you shortly!</p>
+                      </div>
             </div>
             </section>
           </div>
@@ -473,146 +389,59 @@
             <h2>GET A SAME DAY HOLIDAY LIGHTING QUOTE </h2>
             <p>We design, install and remove your holiday lights so you don't have to. Holiday lights done right.            </p>
           </div>
-          <form class="booking__form cil__form" >
-            <p class="booking--title">Get a Free Quote</p>
-            <script
-              charset="utf-8"
-              type="text/javascript"
-              src="//js.hsforms.net/forms/embed/v2.js"
-            ></script>
-            <script>
-              hbspt.forms.create({
-                region: "na1",
-                portalId: "24468008",
-                formId: "1fa3cf7c-1109-41f3-9cc3-49a6a61a16da",
-              });
-            </script>
-            <!-- <div class="name-email__container">
-              <input
-                type="text"
-                class="booking__input booking__input--name"
-                name="firstName"
-                placeholder="First Name"
-                required
-              />
-              <input
-                type="text"
-                class="booking__input booking__input--name"
-                name="lastName"
-                placeholder="Last Name"
-                required
-              />
-            </div>
-            <input
-              type="tel"
-              class="booking__input booking__input--phone"
-              name="phone"
-              placeholder="Phone"
-              required
-            />
-            <input
-              type="email"
-              class="booking__input booking__input--email"
-              name="email"
-              placeholder="Email Address"
-              required
-            />
-            <input
-              type="text"
-              id="addressInput"
-              class="booking__input booking__input--address"
-              name="address"
-              placeholder="Home Address"
-              required
-            />
+          <div class="formcontainer cil__form">
+                        
 
-            <fieldset class="booking__input">
-              <legend>Services</legend>
-              <div>
-                <input
-                  type="checkbox"
-                  id="service-window"
-                  name="service"
-                  value="window"
-                />
-                <label for="service-window">Window Cleaning</label>
+            <p class="booking--title cil__form-title">Get a Free Quote</p>
+            <form class="zapierform" action="https://hooks.zapier.com/hooks/catch/15544183/38musi3/" method="POST">
+              <div class="field email-field">
+                <div class="input-field">
+                  <input type="email" placeholder="Email" class="email" />
+                </div>
+                <span class="error email-error">
+                  <i class="bx bx-error-circle error-icon"></i>
+                  <p class="error-text">Please enter a valid email</p>
+                </span>
               </div>
-              <div>
-                <input
-                  type="checkbox"
-                  id="service-gutter"
-                  name="service"
-                  value="gutter"
-                />
-                <label for="service-gutter">Gutter Cleaning</label>
+              
+              <div class="field name-field">
+                <div class="input-field">
+                  <input type="text" placeholder="Name" class="name" />
+                </div>
+                <span class="error name-error">
+                  <i class="bx bx-error-circle error-icon"></i>
+                  <p class="error-text">Please enter your name</p>
+                </span>
               </div>
-              <div>
-                <input
-                  type="checkbox"
-                  id="service-power"
-                  name="service"
-                  value="power"
-                />
-                <label for="service-power">Power Washing</label>
+              <div class="field number-field">
+                <div class="input-field">
+                  <input type="number" placeholder="Phone" class="phone" />
+                </div>
+                <span class="error phone-error">
+                  <i class="bx bx-error-circle error-icon"></i>
+                  <p class="error-text">Please enter your city</p>
+                </span>
               </div>
-              <div>
-                <input
-                  type="checkbox"
-                  id="service-house"
-                  name="service"
-                  value="house"
-                />
-                <label for="service-house">House Washing</label>
+              
+              <div class="field city-field">
+                <div class="input-field">
+                  <input type="text" placeholder="City" class="name" />
+                </div>
+                <span class="error city-error">
+                  <i class="bx bx-error-circle error-icon"></i>
+                  <p class="error-text">Please enter your city</p>
+                </span>
               </div>
-              <div>
-                <input
-                  type="checkbox"
-                  id="service-christmas"
-                  name="service"
-                  value="christmas"
-                />
-                <label for="service-christmas"
-                  >Christmas Lights Instillation</label
-                >
+              <input type="checkbox" name="agree" id="Iagree2"> 
+            <label class="IagreeLabel" for="Iagree2"> I agree to be contacted by Pure Shine</label>
+           
+           
+              <div class="field button-field input-field">
+                <input type="submit" value="Get a quote" />
               </div>
-            </fieldset>
-            <div class="service-date__container">
-              <select
-                name="service-date-type"
-                id="service-date-type"
-                class="booking__input"
-                data-chosen=""
-                onchange="this.dataset.chosen = this.value;
-              let specificDate = document.querySelector('#service-date-specific');
-              if (this.value === 'specific') {
-                specificDate.required = true;
-              } else {
-                specificDate.required = false;
-                specificDate.value = ''
-              }
-              "
-                required
-              >
-                <option value="" disabled selected>
-                  Preferred Service Date
-                </option>
-                <option value="specific">Specific date</option>
-                <option value="1-week">Within a week</option>
-                <option value="2-week">Within 2 weeks</option>
-                <option value="recurring">
-                  I want recurring service dates
-                </option>
-              </select>
-              <input
-                type="date"
-                name="service-date"
-                id="service-date-specific"
-                class="booking__input"
-                required
-              />
-            </div>
-            <button class="btn__generic" type="submit">Book Now</button> -->
-          </form>
+            </form>
+            <p class="formsubmitedmsg">Thanks for submitting the form. We will get back to you shortly!</p>
+          </div>
           </section>
          
           <!-- FOOTER -->
@@ -620,7 +449,7 @@
             <img class="greeandredlogo" src="/assets/chrismasinstallationlight/pureshinewhite.png" alt="logo">
             <div class="contactWrraper">
               <p>Proudly providing window cleaning services to Hamilton, Burlington, <br> Oakville and the surrounding areas of GTA since 2021.</p>
-              <button class="btn--transparent footer-btn">free quote</button>
+              <button class="btn btn--transparent footer-btn">free quote</button>
               <div class="contact-box">
                 <img src="/assets/chrismasinstallationlight/phone-solid.svg" alt="phone icon">
                 <a href="tel:905-951-5935">905-951-5935</a>

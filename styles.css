@@ -246,7 +246,7 @@ nav {
   justify-content: center;
 }
 
-.nav__container {
+.nav__formcontainer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -1447,7 +1447,7 @@ body{
 }
 
 .cil__form{
-  width: 90%;
+  /* width: 80%; */
   background-color: rgba(189,66,67,255);
 }
 
@@ -1475,8 +1475,8 @@ body{
 }
 .cil-heroDesc h5{
   font-weight: 500 !important;
-  font-size: 1.8rem;
-  color: rgba(189,66,67,255);
+  font-size: 1.9rem;
+  color:#b00;
   font-family: 'Freehand', cursive;
 }
 /* CALLOUT OF CIL */
@@ -1499,7 +1499,7 @@ body{
 
 
 .callout__card{
-  background-color: rgba(189,66,67,255);
+  background-color:#b00;
   padding: 10px; 
   border-radius: 10px;
   color: white;
@@ -1779,6 +1779,10 @@ font-size: 25px !important;
 
 /* RESPONSIVNES */
 @media screen and (min-width:786px){
+
+  .formcontainer{
+    max-width: 500px !important;
+  }
   .galleryImages{
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 
@@ -1812,9 +1816,7 @@ font-size: 25px !important;
     padding: 20px;
     justify-content: center;
   }
-  #getaquote form{
-    width: 50% !important;
-  }
+ 
   .cil-callNumber{
    display: block;
   }
@@ -1823,10 +1825,10 @@ font-size: 25px !important;
   }
 
 
-.callout form{
+.callout .cil__form{
   position:relative;
-  bottom:130px;
-  width:80%;
+  bottom:100px;
+  /* width:80%; */
 }
 .banner--green{
   font-size:1rem !important;
@@ -1860,4 +1862,97 @@ font-size:.8rem;
 
 .banner-greenItems .contact-box{
 margin:0px 5px !important;
+}
+
+.cil__form-title{
+color: white !important;
+font-size: 1.8rem !important;
+}
+
+
+/* form */
+
+.formcontainer {
+  position: relative;
+ width:90%;
+ margin-inline:auto;
+  /* max-width: 370px; */
+  padding: 25px;
+  background-color:rgba(189,66,67,255);
+
+  border-radius: 8px;
+}
+.formcontainer h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+.formcontainer form {
+  margin-top: 30px;
+}
+.formcontainer .field {
+  margin-bottom: 20px;
+}
+.formcontainer .input-field {
+  position: relative;
+  width: 100%;
+  height: 55px;
+}
+.input-field input {
+  width: 100%;
+  height: 80%;
+  padding: 0 15px;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  outline: none;
+}
+.invalid input {
+  border: 1px solid #d93025;
+}
+.field .error {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #d93025;
+  display: none;
+}
+.invalid .error {
+  display: flex;
+}
+.error .error-icon {
+  font-size: 15px;
+  margin-right: 6px;
+}
+
+.button-field {
+  margin: 25px 0 6px;
+}
+.button-field input {
+  font-size: 16px;
+  font-weight: 400;
+  background-color: rgba(189,66,67,255) ;
+  color: #fff;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+
+.formsubmitedmsg{
+  color: white;
+  font-size: 1.2rem;
+  display: none;
+}
+
+.IagreeLabel{
+  color: white !important;
+}
+
+
+.nav__container{
+
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
 }

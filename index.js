@@ -216,3 +216,41 @@ function initializeAutocomplete() {
   // });
 }
 google.maps.event.addDomListener(window, "load", initializeAutocomplete);
+
+
+const myCustomform=document.querySelector('.zapierform')
+const formsubmitedMsg=document.querySelector('.formsubmitedmsg')
+myCustomform.addEventListener('submit',(e) =>{
+  e.preventDefault()
+  alert('submited')
+  myCustomform.style.display='none'
+   formsubmitedMsg.style.display="block"
+})
+
+
+
+// ADDED FORM WITH ZAPIER
+const form = document.querySelector('form'),
+  emailField = form.querySelector('.email-field'),
+  emailInput = emailField.querySelector('.email')
+
+
+// ---- ---- Email Validation ---- ---- //
+// function checkEmail() {
+//   const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+//   if (!emailInput.value.match(emailPattern)) {
+//     return emailField.classList.add('invalid');
+//   }
+//   emailField.classList.remove('invalid');
+// }
+
+
+
+// // ---- ---- Calling Function on Form Sumbit ---- ---- //
+// form.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   checkEmail();
+
+//   emailInput.addEventListener('keyup', checkEmail);
+
+// });
