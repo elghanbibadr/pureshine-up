@@ -64,71 +64,71 @@ function toggleMenu() {
   document.querySelector(".body--wrapper").classList.toggle("menu--open");
 }
 
-document
-  .querySelector(".booking__form")
-  .addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent form submission
+// document
+//   .querySelector(".booking__form")
+//   .addEventListener("submit", function (event) {
+//     event.preventDefault(); // Prevent form submission
 
-    // Collect form data from form fields
-    var name = document.querySelector(".booking__input--name").value;
-    var email = document.querySelector(".booking__input--email").value;
-    var phone = document.querySelector(".booking__input--phone").value;
-    var address = document.querySelector(".booking__input--address").value;
-    var services = [];
-    var serviceCheckboxes = document.querySelectorAll(
-      'input[name="service"]:checked'
-    );
-    serviceCheckboxes.forEach(function (checkbox) {
-      services.push(checkbox.value);
-    });
-    var serviceDateType = document.querySelector("#service-date-type").value;
-    var serviceDateSpecific = document.querySelector(
-      "#service-date-specific"
-    ).value;
+//     // Collect form data from form fields
+//     var name = document.querySelector(".booking__input--name").value;
+//     var email = document.querySelector(".booking__input--email").value;
+//     var phone = document.querySelector(".booking__input--phone").value;
+//     var address = document.querySelector(".booking__input--address").value;
+//     var services = [];
+//     var serviceCheckboxes = document.querySelectorAll(
+//       'input[name="service"]:checked'
+//     );
+//     serviceCheckboxes.forEach(function (checkbox) {
+//       services.push(checkbox.value);
+//     });
+//     var serviceDateType = document.querySelector("#service-date-type").value;
+//     var serviceDateSpecific = document.querySelector(
+//       "#service-date-specific"
+//     ).value;
 
-    // Format data for HubSpot CRM
-    var data = {
-      properties: [
-        { property: "name", value: name },
-        { property: "email", value: email },
-        { property: "email", value: email },
-        { property: "phone", value: phone },
-        { property: "address", value: address },
-        { property: "selected_services", value: services.join(", ") },
-        { property: "service_date_type", value: serviceDateType },
-        { property: "service_date_specific", value: serviceDateSpecific },
-      ],
-    };
-    console.log(services);
-    console.log(services.join(", "));
+//     // Format data for HubSpot CRM
+//     var data = {
+//       properties: [
+//         { property: "name", value: name },
+//         { property: "email", value: email },
+//         { property: "email", value: email },
+//         { property: "phone", value: phone },
+//         { property: "address", value: address },
+//         { property: "selected_services", value: services.join(", ") },
+//         { property: "service_date_type", value: serviceDateType },
+//         { property: "service_date_specific", value: serviceDateSpecific },
+//       ],
+//     };
+//     console.log(services);
+//     console.log(services.join(", "));
 
-    // Send data to HubSpot CRM
-    var url = "http://127.0.0.1:3000/api/data";
-    var apiKey = "{pat-na1-90b3108c-f7b1-49e0-a0b4-d24cfd59a7d5}";
-    var headers = {
-      "Content-Type": "application/json",
-      Authorization: "Bearer " + apiKey,
-    };
+//     // Send data to HubSpot CRM
+//     var url = "http://127.0.0.1:3000/api/data";
+//     var apiKey = "{pat-na1-90b3108c-f7b1-49e0-a0b4-d24cfd59a7d5}";
+//     var headers = {
+//       "Content-Type": "application/json",
+//       Authorization: "Bearer " + apiKey,
+//     };
 
-    fetch(url, {
-      method: "POST",
-      headers: headers,
-      body: JSON.stringify(data),
-    })
-      .then(function (response) {
-        if (response.ok) {
-          console.log("Form data sent to HubSpot CRM successfully!");
-        } else {
-          console.error(
-            "Error sending form data to HubSpot CRM:",
-            response.status
-          );
-        }
-      })
-      .catch(function (error) {
-        console.error("Error sending form data to HubSpot CRM:", error);
-      });
-  });
+//     fetch(url, {
+//       method: "POST",
+//       headers: headers,
+//       body: JSON.stringify(data),
+//     })
+//       .then(function (response) {
+//         if (response.ok) {
+//           console.log("Form data sent to HubSpot CRM successfully!");
+//         } else {
+//           console.error(
+//             "Error sending form data to HubSpot CRM:",
+//             response.status
+//           );
+//         }
+//       })
+//       .catch(function (error) {
+//         console.error("Error sending form data to HubSpot CRM:", error);
+//       });
+//   });
 
 //send Hubspot Form
 // document
@@ -217,22 +217,106 @@ function initializeAutocomplete() {
 }
 google.maps.event.addDomListener(window, "load", initializeAutocomplete);
 
+// FORM
 
-const myCustomform=document.querySelector('.zapierform')
-const formsubmitedMsg=document.querySelector('.formsubmitedmsg')
-myCustomform.addEventListener('submit',(e) =>{
-  e.preventDefault()
-  alert('submited')
-  myCustomform.style.display='none'
-   formsubmitedMsg.style.display="block"
-})
+// const form = document.querySelector(".zapierform");
+// const email = document.querySelector(".email");
+// const username = document.querySelector(".name");
+// const phone = document.querySelector(".phone");
+// const city = document.querySelector(".city");
+// const agree = document.getElementById("agree1");
+// console.log(agree)
+
+// console.log(agree)
+// console.log(email)
+// console.log(city)
+// console.log(form)
+// const onSuccess = (response) => {
+//   // display success
+//   // document.createElement...
+// };
+
+// const onError = (error) => {
+//   // display error
+//   // document.createElement...
+// };
 
 
+// form.onsubmit = (e) => {
+//   e.preventDefault();
+//   console.log("submited")
+//   console.log(city.value)
+//  console.log(agree.checked)
+//   fetch("https://hooks.zapier.com/hooks/catch/15544183/385ey4h/", {
+//     method: "POST",
+//     body: JSON.stringify({
+//       email: email.value,
+//       name: username.value,
+//       phone: phone.value,
+//       city: city.value,
+//       agree: agree.checked,
+//     }),
+//   })
+//     .then((r) => r.json())
+//     .then(onSuccess)
+//     .catch(onError);
+// };
 
-// ADDED FORM WITH ZAPIER
-const form = document.querySelector('form'),
-  emailField = form.querySelector('.email-field'),
-  emailInput = emailField.querySelector('.email')
+const forms = document.querySelectorAll(".zapierform");
+
+function onSuccess(response) {
+  // display success
+  // document.createElement...
+}
+
+function onError(error) {
+  // display error
+  // document.createElement...
+}
+
+forms.forEach((form) => {
+  console.log(form)
+  const email = form.querySelector(".email");
+  const username = form.querySelector(".name");
+  const phone = form.querySelector(".phone");
+  const city = form.querySelector(".city");
+  const agree = form.querySelector(".agree");
+ 
+  form.onsubmit = (e) => {
+    console.log(agree)
+    e.preventDefault();
+    console.log("submitted");
+    // console.log(city.value);
+    console.log(city.value)
+    console.log(phone.value)
+    console.log(username.value)
+    console.log(email.value)
+    // console.log(agree.checked);
+
+    fetch("https://hooks.zapier.com/hooks/catch/15544183/385ey4h/", {
+      method: "POST",
+      body: JSON.stringify({
+        email: email.value,
+        name: username.value,
+        phone: phone.value,
+        city: city.value,
+        agree: agree.checked,
+      }),
+    })
+
+      .then((r) => r.json())
+      .then(onSuccess)
+      .catch(onError).finally(() =>{
+        email.value=username.value=phone.value=city.value="" ;
+console.log(form.nextElementSibling)
+form.nextElementSibling.style.display="block" 
+form.style.display="none"
+
+      })
+  };
+});
+
+
 
 
 // ---- ---- Email Validation ---- ---- //

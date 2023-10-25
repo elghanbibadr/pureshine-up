@@ -1872,6 +1872,10 @@ font-size: 1.8rem !important;
 
 /* form */
 
+
+#homePageForm,#homePageForm .button-field input {
+  background-color: #014487 !important;
+}
 .formcontainer {
   position: relative;
  width:90%;
@@ -1940,8 +1944,9 @@ font-size: 1.8rem !important;
 
 
 .formsubmitedmsg{
-  color: white;
-  font-size: 1.2rem;
+  color: white !important;
+  font-size: 1.6rem;
+  text-align: center;
   display: none;
 }
 
@@ -1956,3 +1961,12 @@ font-size: 1.8rem !important;
   justify-content: flex-end !important;
   align-items: center !important;
 }
+
+
+
+
+
+
+
+
+/* */
