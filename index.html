@@ -19,12 +19,18 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
+    <!-- AOS -->
+    
+
+    <!--  -->
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="index.js" defer></script>
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+ 
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
@@ -202,7 +208,7 @@
                 </li>
           
               </ul>
-              <div class="action__reviews">
+              <div class="action__reviews "  data-aos="fade-up">
                 <a href="#testimonials">
                   <h1 class="action--title link__hover-effect">
                     Read Our Reviews
@@ -869,13 +875,13 @@
             </h1>
           </div>
         </section>
-        <section id="booking">
-          <div class="row">
-            <div id="homePageForm" class="formcontainer cil__form">
+        <section id="booking"  >
+          <div class="row"  >
+            <div  id="homePageForm" class="formcontainer cil__form">
                         
 
               <p class="booking--title cil__form-title">Get a Free Quote</p>
-              <form id="form" class="zapierform">
+              <form  id="form" class="zapierform">
                 <div class="field email-field">
                   <div class="input-field">
                     <input type="email" placeholder="Email" class="email" />
@@ -915,6 +921,11 @@
           </div>
         </section>
       </main>
+
+
+      <div  data-aos="fade-right" class="test">
+        hello world
+      </div>
       <footer class="footer">
         <div class="row">
           <div class="footer__column footer__titles">
@@ -1006,5 +1017,10 @@
       src="//js.hs-scripts.com/24468008.js"
     ></script>
     <!-- End of HubSpot Embed Code -->
+       <!-- AOS JavaScript -->
+       <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+       <script>
+         AOS.init();
+       </script>
   </body>
 </html>
