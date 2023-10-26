@@ -274,56 +274,123 @@ function onError(error) {
   // document.createElement...
 }
 
+// forms.forEach((form) => {
+//   console.log(form)
+//   const email = form.querySelector(".email");
+//   const username = form.querySelector(".name");
+//   const phone = form.querySelector(".phone");
+//   const city = form.querySelector(".city");
+//   const agree = form.querySelector(".agree");
+ 
+//   form.onsubmit = (e) => {
+//     e.preventDefault();
+
+//     if(email.value===""){
+//       email.parentElement.nextElementSibling.style.display="block"
+//       email.style.border="2px solid red"
+//       setTimeout(() =>{
+//         email.parentElement.nextElementSibling.style.display="none"
+//         email.style.border="none"
+//       },2000)
+//     }
+   
+//     if(username.value===""){
+//       username.parentElement.nextElementSibling.style.display="block"
+//       city.style.border="2px solid red"
+//       setTimeout(() =>{
+//         username.parentElement.nextElementSibling.style.display="none"
+//         username.style.border="none"
+//       },2000)
+//     }
+//     if(city.value===""){
+//       city.parentElement.nextElementSibling.style.display="block"
+//       city.style.border="2px solid red"
+//       setTimeout(() =>{
+//         city.parentElement.nextElementSibling.style.display="none"
+//         city.style.border="none"
+//       },2000)
+//     }
+//     if(phone.value===""){
+//       phone.parentElement.nextElementSibling.style.display="block"
+//       phone.style.border="2px solid red"
+//       setTimeout(() =>{
+//         phone.parentElement.nextElementSibling.style.display="none"
+//         phone.style.border="none"
+//       },2000)
+//     }
+
+
+//     if(!email.value || !username.value || !phone.value || !city.value )return;
+
+
+//     console.log("coming")
+//     fetch("https://hooks.zapier.com/hooks/catch/15544183/385ey4h/", {
+//       method: "POST",
+//       body: JSON.stringify({
+//         email: email.value,
+//         name: username.value,
+//         phone: phone.value,
+//         city: city.value,
+//         agree: agree.checked,
+//       }),
+//     })
+
+//       .then((r) => r.json())
+//       .then(onSuccess)
+//       .catch(onError).finally(() =>{
+//         email.value=username.value=phone.value=city.value="" ;
+// console.log(form.nextElementSibling)
+// form.nextElementSibling.style.display="block" 
+// form.style.display="none"
+
+//       })
+//   };
+// });
+
 forms.forEach((form) => {
-  console.log(form)
   const email = form.querySelector(".email");
   const username = form.querySelector(".name");
   const phone = form.querySelector(".phone");
   const city = form.querySelector(".city");
   const agree = form.querySelector(".agree");
- 
+
+  const showError = (element) => {
+    element.parentElement.nextElementSibling.style.display = "block";
+    element.style.border = "2px solid red";
+    setTimeout(() => {
+      element.parentElement.nextElementSibling.style.display = "none";
+      element.style.border = "none";
+    }, 2000);
+  };
+
+  const isFieldEmpty = (element) => {
+    return element.value.trim() === "";
+  };
+
   form.onsubmit = (e) => {
     e.preventDefault();
 
-    if(email.value===""){
-      email.parentElement.nextElementSibling.style.display="block"
-      email.style.border="2px solid red"
-      setTimeout(() =>{
-        email.parentElement.nextElementSibling.style.display="none"
-        email.style.border="none"
-      },2000)
-    }
-   
-    if(username.value===""){
-      username.parentElement.nextElementSibling.style.display="block"
-      city.style.border="2px solid red"
-      setTimeout(() =>{
-        username.parentElement.nextElementSibling.style.display="none"
-        username.style.border="none"
-      },2000)
-    }
-    if(city.value===""){
-      city.parentElement.nextElementSibling.style.display="block"
-      city.style.border="2px solid red"
-      setTimeout(() =>{
-        city.parentElement.nextElementSibling.style.display="none"
-        city.style.border="none"
-      },2000)
-    }
-    if(phone.value===""){
-      phone.parentElement.nextElementSibling.style.display="block"
-      phone.style.border="2px solid red"
-      setTimeout(() =>{
-        phone.parentElement.nextElementSibling.style.display="none"
-        phone.style.border="none"
-      },2000)
+    if (isFieldEmpty(email)) {
+      showError(email);
     }
 
+    if (isFieldEmpty(username)) {
+      showError(username);
+    }
 
-    if(!email.value || !username.value || !phone.value || !city.value )return;
+    if (isFieldEmpty(city)) {
+      showError(city);
+    }
 
+    if (isFieldEmpty(phone)) {
+      showError(phone);
+    }
 
-    console.log("coming")
+    if (isFieldEmpty(email) || isFieldEmpty(username) || isFieldEmpty(city) || isFieldEmpty(phone)) {
+      return;
+    }
+
+    console.log("coming");
     fetch("https://hooks.zapier.com/hooks/catch/15544183/385ey4h/", {
       method: "POST",
       body: JSON.stringify({
@@ -334,19 +401,16 @@ forms.forEach((form) => {
         agree: agree.checked,
       }),
     })
-
       .then((r) => r.json())
       .then(onSuccess)
-      .catch(onError).finally(() =>{
-        email.value=username.value=phone.value=city.value="" ;
-console.log(form.nextElementSibling)
-form.nextElementSibling.style.display="block" 
-form.style.display="none"
-
-      })
+      .catch(onError)
+      .finally(() => {
+        email.value = username.value = phone.value = city.value = "";
+        form.nextElementSibling.style.display = "block";
+        form.style.display = "none";
+      });
   };
 });
-
 
 
 

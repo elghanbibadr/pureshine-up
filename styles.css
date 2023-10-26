@@ -1778,8 +1778,22 @@ font-size: 25px !important;
 }
 
 /* RESPONSIVNES */
-@media screen and (min-width:786px){
 
+.cil-link{
+  display: none !important;
+  
+}
+
+.nav__link{
+  cursor:  pointer !important;
+}
+
+@media screen and (min-width:786px){
+  .cil-link{
+    display: inline-block !important;
+    
+  }
+  
   .formcontainer{
     max-width: 500px !important;
   }
@@ -1914,12 +1928,20 @@ color: rgba(189,66,67,255);
   width: 100%;
   height: 55px;
 }
+/* Add the CSS code to your stylesheet */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
 
 .required{
   color: red;
   font-weight:400;
   font-size:1rem;
   display: none;
+  text-align: left;
 }
 .input-field input {
   width: 100%;
@@ -1969,8 +1991,9 @@ color: rgba(189,66,67,255);
   display: none;
 }
 
-.IagreeLabel{
+.IagreeLabel,input[type="checkbox"]{
   color: white !important;
+  cursor: pointer;
 }
 
 
