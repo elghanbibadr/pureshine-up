@@ -1479,6 +1479,10 @@ body{
   color:#b00;
   font-family: 'Freehand', cursive;
 }
+.cil-heroDesc button:hover{
+background-color:#b00;
+}
+
 /* CALLOUT OF CIL */
 
 .callout-wrraper{
@@ -1735,9 +1739,11 @@ background-position: center;
   align-items: center;
   justify-content: center;
   margin-block: 10px;
+  cursor: pointer !important;
 }
 
 .contact-box img{
+  cursor: pointer !important;
   height: 20px;
   width: 20px;
   margin-right: 6px;
@@ -1872,6 +1878,7 @@ padding-block:8px;
 font-size:.8rem;
 
 }
+
 
 .banner-greenItems{
   display:flex !important;
