@@ -71,7 +71,7 @@ function initializeAutocomplete() {
   var autocomplete = new google.maps.places.Autocomplete(addressInput);
   
 }
-google.maps.event.addDomListener(window, "load", initializeAutocomplete);
+// google.maps.event.addDomListener(window, "load", initializeAutocomplete);
 
 // FORM
 

@@ -2048,13 +2048,10 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .toCilimg{
-  /* object-fit: contain; */
-  /* height:; */
-  height: 260px !important;
-  /* height: 100%; */
+ 
+height: 220px !important;
 }
 
-/*  */
 
 
 @media screen and (min-width:786px){
