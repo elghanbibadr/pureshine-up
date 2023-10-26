@@ -2007,10 +2007,17 @@ input[type="number"]::-webkit-outer-spin-button {
 .nav__container{
 
   display: flex !important;
-  justify-content: flex-end !important;
+  /* justify-content: flex-end !important; */
   align-items: center !important;
 }
 
+
+@media screen and (min-width:700px) {
+  .nav__container{
+
+    justify-content: flex-end !important;
+  }
+}
 
 
 
