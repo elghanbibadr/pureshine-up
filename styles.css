@@ -555,6 +555,8 @@ header .row {
   max-width: 1352px;
 }
 
+
+
 .testimonials--title {
   font-size: 60px;
   font-weight: 700;
@@ -1795,7 +1797,11 @@ font-size: 25px !important;
 }
 
 @media screen and (min-width:786px){
+
+  
+  
   .cil-link{
+
     display: inline-block !important;
     
   }
@@ -1859,8 +1865,8 @@ font-size: 25px !important;
 }
 
 
-.banner-greenItems .contact-box{
-  margin:0px 10px !important;
+#banner-contact .contact-box{
+  margin:2px 10px !important;
   }
 
 
@@ -1875,20 +1881,21 @@ font-size: 25px !important;
 background-color:#57b837;
 color:white;
 padding-block:8px;
-font-size:.8rem;
+font-size:1rem;
 
 }
 
 
-.banner-greenItems{
-  display:flex !important;
-  justify-content:center;
+#banner-contact .contact-box{
+margin:3px 10px !important;
 }
 
-.banner-greenItems .contact-box{
-margin:0px 5px !important;
+@media screen and (min-width: 768px) {
+  #banner-contact {
+    display: flex;
+    justify-content: center;
+  }
 }
-
 .cil__form-title{
 color: white !important;
 font-size: 1.8rem !important;
@@ -2012,6 +2019,11 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 
+.linkToCil{
+  display: block;
+  margin-inline: auto !important;
+}
+
 @media screen and (min-width:700px) {
   .nav__container{
 
@@ -2026,3 +2038,29 @@ input[type="number"]::-webkit-outer-spin-button {
 
 
 /* */
+
+
+
+
+.toCilCard{
+  /* width:fit-content; */
+  /* height: 100px !important; */
+}
+
+.toCilimg{
+  /* object-fit: contain; */
+  /* height:; */
+  height: 260px !important;
+  /* height: 100%; */
+}
+
+/*  */
+
+
+@media screen and (min-width:786px){
+  .toCilimg{
+    /* object-fit: contain; */
+    height: 320px !important ;
+  }
+
+}
