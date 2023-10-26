@@ -283,16 +283,47 @@ forms.forEach((form) => {
   const agree = form.querySelector(".agree");
  
   form.onsubmit = (e) => {
-    console.log(agree)
     e.preventDefault();
-    console.log("submitted");
-    // console.log(city.value);
-    console.log(city.value)
-    console.log(phone.value)
-    console.log(username.value)
-    console.log(email.value)
-    // console.log(agree.checked);
 
+    if(email.value===""){
+      email.parentElement.nextElementSibling.style.display="block"
+      email.style.border="2px solid red"
+      setTimeout(() =>{
+        email.parentElement.nextElementSibling.style.display="none"
+        email.style.border="none"
+      },2000)
+    }
+   
+    if(username.value===""){
+      username.parentElement.nextElementSibling.style.display="block"
+      city.style.border="2px solid red"
+      setTimeout(() =>{
+        username.parentElement.nextElementSibling.style.display="none"
+        username.style.border="none"
+      },2000)
+    }
+    if(city.value===""){
+      city.parentElement.nextElementSibling.style.display="block"
+      city.style.border="2px solid red"
+      setTimeout(() =>{
+        city.parentElement.nextElementSibling.style.display="none"
+        city.style.border="none"
+      },2000)
+    }
+    if(phone.value===""){
+      phone.parentElement.nextElementSibling.style.display="block"
+      phone.style.border="2px solid red"
+      setTimeout(() =>{
+        phone.parentElement.nextElementSibling.style.display="none"
+        phone.style.border="none"
+      },2000)
+    }
+
+
+    if(!email.value || !username.value || !phone.value || !city.value )return;
+
+
+    console.log("coming")
     fetch("https://hooks.zapier.com/hooks/catch/15544183/385ey4h/", {
       method: "POST",
       body: JSON.stringify({
