@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/chrismasinstallationlight/green&redlogo.jfif"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC97hFBwowRYTtoY8tBd-T7EIeuBVo0Qmw&libraries=places"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Pure Shine Cleaning Services</title>
+  </head>
+  <body>
+    <div class="body--wrapper">
+      <section id="banner">
+        <div class="banner--green">
+      
+          <div class="row" id="banner-contact">
+            <a href="tel:905-951-5935" class="contact-box">
+              <img
+                src="/assets/chrismasinstallationlight/phone-solid.svg"
+                alt="phone icon"
+              />
+              <span>905-951-5935</span>
+            </a>
+            <a href="mailto:info@pureshineservices.com" class="contact-box">
+              <img
+                src="/assets/chrismasinstallationlight/envelope-solid.svg"
+                alt="envelope-solid icon"
+              />
+              <span>info@pureshineservices.com</span>
+            </a>
+          </div>
+        </div>
+        <div class="banner--white">
+          <div class="row">
+            <div class="banner__wrapper">
+              <figure class="banner__img--wrapper">
+                <img
+                  src="./assets/chrismasinstallationlight/green_redlogo.png"
+                  alt=""
+                  class="banner__img cil-navLogo"
+                />
+              </figure>
+              <div class="hero__actions">
+                <div class="action__reviews">
+                  <a
+                    target="_blank"
+                    href="https://www.google.com/maps/place/Pure+Shine+Cleaning+Services+-+Hamilton/@43.2609421,-80.0979549,11z/data=!4m8!3m7!1s0xa8a916d9bd0f8e4b:0x9623f5623a9e0f24!8m2!3d43.2608104!4d-79.9331491!9m1!1b1!16s%2Fg%2F11txnftntk?entry=ttu"
+                  >
+                    <h1 class="action--title link__hover-effect">
+                      Read Our Reviews
+                    </h1>
+                    <figure class="action__img--wrapper">
+                      <img
+                        src="./assets/banner/star.png"
+                        alt=""
+                        class="action__img"
+                      />
+                      <img
+                        src="./assets/banner/star.png"
+                        alt=""
+                        class="action__img"
+                      />
+                      <img
+                        src="./assets/banner/star.png"
+                        alt=""
+                        class="action__img"
+                      />
+                      <img
+                        src="./assets/banner/star.png"
+                        alt=""
+                        class="action__img"
+                      />
+                      <img
+                        src="./assets/banner/star.png"
+                        alt=""
+                        class="action__img"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div class="action--separator"></div>
+                <div class="action__call">
+                  <figure class="action__img--wrapper">
+                    <h2 class="action__call--number cil-callNumber">
+                      <a href="tel:9059515935" class="link__hover-effect">
+                        905-951-5935
+                      </a>
+                    </h2>
+                  </figure>
+                </div>
+              </div>
+              <button class="btn__menu" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="menu__backdrop cil-backdropmenu">
+                <button
+                  class="btn__menu btn__menu--close"
+                  onclick="toggleMenu()"
+                >
+                  <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                  <li class="menu__list">
+                    <a
+                      href="index.html"
+                      class="menu__link link__hover-effect"
+                      onclick="toggleMenu()"
+                      >HOME</a
+                    >
+                  </li>
+                  <li class="menu__list">
+                    <a
+                      href="#features"
+                      class="menu__link link__hover-effect"
+                      onclick="toggleMenu()"
+                    >
+                      FEATURES</a
+                    >
+                  </li>
+                  <li class="menu__list">
+                    <a
+                      href="#gallery"
+                      class="menu__link link__hover-effect"
+                      onclick="toggleMenu()"
+                      >GALLERY</a
+                    >
+                  </li>
+
+                  <li class="menu__list">
+                    <a
+                      href="#getaquote"
+                      class="menu__link link__hover-effect"
+                      onclick="toggleMenu()"
+                    >
+                      GET A QUOTE</a
+                    >
+                  </li>
+
+                  <li class="menu__list">
+                    <a
+                      href="tel:9059515935"
+                      class="menu__link no-cursor"
+                      onclick="toggleMenu()"
+                      >905-951-5935</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="cil-nav">
+          <div class="nav__container row">
+            <ul class="nav__links chrismaslightinstallation__navbar">
+              <li>
+                <a
+                  href="/index.html"
+                  class="nav__link nav__link--active link__hover-effect"
+                >
+                  HOME
+                </a>
+              </li>
+              <li>
+                <a href="#features" class="nav__link link__hover-effect">
+                  FEATURES
+                </a>
+              </li>
+              <li>
+                <a href="#gallery" class="nav__link link__hover-effect">
+                  GALLERY
+                </a>
+              </li>
+              <li>
+                <a href="#getaquote" class="nav__link link__hover-effect">
+                  GET A QUOTE
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+      <section id="lightInstallationHero">
+        <section>
+          <header>
+            <div class="row cil-heroDesc">
+              <h5 class="header__para HolidayLightingTitle">
+                Holiday Lighting
+              </h5>
+              <h1 class="header__title">
+                Professional Christmas lighting Without the headache
+              </h1>
+              <!-- <div class="header__btns"> -->
+              <a href="#formContainer" class=""
+                ><button class="btn btn--red">FREE ESTIMATE</button>
+              </a>
+
+              <!-- </div> -->
+            </div>
+          </header>
+        </section>
+        <!-- <section id="booking" class="cil-booking">
+           
+              </section> -->
+      </section>
+      <div class="callout-wrraper">
+        <section class="callout container" id="callout">
+          <!-- cols 1 -->
+          <div class="callout__desc">
+            <div class="callout__titles">
+              <h2>EXCEPTIONAL HOLIDAY LIGHTING WITH SAME DAY ESTIMATES</h2>
+              <p>
+                Stay off your ladders this season and leave your Christmas
+                lights and outdoor Christmas decorations to our safety-trained
+                team
+              </p>
+            </div>
+            <div class="callout__card">
+              <b>SAVE when you book your holiday lighting early!</b> Early bird
+              offer for new clients: we’ll take down your lights for FREE if you
+              book your 2023 lighting installation before October 31, 2023.
+              Offer applies to your first year of holiday lighting only.
+            </div>
+          </div>
+          <!-- cols2 -->
+          <div class="row">
+            <div id="formContainer" class="formcontainer cil__form">
+              <p class="booking--title cil__form-title">Get a Free Quote</p>
+
+              <!-- formatted form -->
+              <form class="zapierform redform">
+                <div class="field name-field">
+                  <div class="input-field">
+                    <input type="text" placeholder="Name" class="name" />
+                  </div>
+                  <span class="required">required</span>
+                </div>
+
+                <div class="field phone-field">
+                  <div class="input-field">
+                    <input type="number" placeholder="Phone" class="phone" oninput="this.value = this.value.replace(/[^0-9]/g, '');"/>
+                  </div>
+                  <span class="required">required</span>
+                </div>
+
+                <div class="field email-field">
+                  <div class="input-field">
+                    <input type="email" placeholder="Email" class="email" />
+                  </div>
+                  <span class="required">required</span>
+                </div>
+
+                <div class="field city-field">
+                  <div class="input-field">
+                    <input type="text" placeholder="City" class="city" />
+                  </div>
+                  <span class="required">required</span>
+                </div>
+
+                <input
+                  type="checkbox"
+                  name="agree2"
+                  id="agree2"
+                  class="agree"
+                />
+                <label class="IagreeLabel" for="agree2"
+                  >I agree to be contacted by Pure Shine</label
+                >
+
+                <div class="field button-field input-field">
+                  <input type="submit" value="Get a quote" />
+                </div>
+              </form>
+
+              <!--  -->
+              <p class="formsubmitedmsg">
+                Thanks for submitting the form. We will get back to you shortly!
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- FEATURE SECTION -->
+      <div class="container">
+        <section id="features">
+          <div class="features__card">
+            <img
+              src="/assets/chrismasinstallationlight/fullyinsured.svg"
+              alt="fullyinsured icon"
+            />
+            <h4>Fully Insured</h4>
+            <p>
+              Pure Shine is fully insured and follows protocols to safely
+              operate.
+            </p>
+          </div>
+          <div class="features__card">
+            <img
+              src="/assets/chrismasinstallationlight/lifetimewarranty.svg"
+              alt="lifetimewarranty icon"
+            />
+            <h4>Lifetime Warranty</h4>
+            <p>
+              On all lights and products if we are installing and taking them
+              down each year.
+            </p>
+          </div>
+          <div class="features__card">
+            <img
+              src="/assets/chrismasinstallationlight/commercialgrad.svg"
+              alt="commercialgrad icon"
+            />
+            <h4>Commercial Grade LED</h4>
+            <p>
+              Our products are commercial grade LED lights. Our lights shine
+              brighter than the competition!
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <!-- GALLERY -->
+      <section id="gallery">
+        <h2>HOLIDAY LIGHTING IMAGE GALLERY</h2>
+        <div class="galleryImages">
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery1.jpg"
+            alt="chrismas gallery image 1"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery2.jpg"
+            alt="chrismas gallery image 2"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery3.jpg"
+            alt="chrismas gallery image 3"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery4.JPG"
+            alt="chrismas gallery image 3"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery5.jpg"
+            alt="chrismas gallery image 4"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery6.jpg"
+            alt="chrismas gallery image 5"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery7.jpg"
+            alt="chrismas gallery image 6"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery8.jpg"
+            alt="chrismas gallery image 7"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery9.jpg"
+            alt="chrismas gallery image 8"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery10.JPG"
+            alt="chrismas gallery image 9"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery11.JPG"
+            alt="chrismas gallery image 10"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery12.JPG"
+            alt="chrismas gallery image 11"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery13.JPG"
+            alt="chrismas gallery image 12"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery14.JPG"
+            alt="chrismas gallery image 13"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery15.JPG"
+            alt="chrismas gallery image 14"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery16.JPG"
+            alt="chrismas gallery image 15"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery17.JPG"
+            alt="chrismas gallery image 16"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery18.JPG"
+            alt="chrismas gallery image 17"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery19.JPG"
+            alt="chrismas gallery image 18"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery20.jpg"
+            alt="chrismas gallery image 19"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery21.JPG"
+            alt="chrismas gallery image 20"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery22.JPG"
+            alt="chrismas gallery image 21"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery23.JPG"
+            alt="chrismas gallery image 22"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery24.jpg"
+            alt="chrismas gallery image 23"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery25.jpg"
+            alt="chrismas gallery image 24"
+          />
+          <img
+            src="/assets/chrismasinstallationlight/gallery/gallery26.jpg"
+            alt="chrismas gallery image 25"
+          />
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section id="cta">
+        <div class="cta-wrraper">
+          <img
+            class="cta__img"
+            src="/assets/chrismasinstallationlight/holiday-lighting-safety.jpg"
+            alt="holiday-lighting-safety image"
+          />
+          <div class="cta__card">
+            <h2>HOLIDAY LIGHTS DONE RIGHT</h2>
+            <p>
+              At Pure Shine safety is our top priority. When we hang our lights
+              on trees of large size we don’t use ladders. Instead we use boom
+              lifts to operate in a professional and safe manner.
+            </p>
+            <a href="#formContainer"
+              ><button class="btn btn--transparent">FREE ESTIMATE</button></a
+            >
+            <div class="cta-featuresList">
+              <div class="cta-item">
+                <img
+                  src="/assets/chrismasinstallationlight/WreathsGarlands.svg"
+                  alt="WreathsGarlands icon"
+                />
+                <h5>Wreaths & Garlands</h5>
+              </div>
+              <div class="cta-item">
+                <img
+                  src="/assets/chrismasinstallationlight/Rooflines.svg"
+                  alt="Rooflines icon"
+                />
+                <h5>Rooflines</h5>
+              </div>
+              <div class="cta-item">
+                <img
+                  src="/assets/chrismasinstallationlight/pillar.svg"
+                  alt="pillar icon"
+                />
+                <h5>Pillars</h5>
+              </div>
+              <div class="cta-item">
+                <img
+                  src="/assets/chrismasinstallationlight/Trees.svg"
+                  alt="trees icon"
+                />
+                <h5>Trees</h5>
+              </div>
+              <div class="cta-item">
+                <img
+                  src="/assets/chrismasinstallationlight/WreathsGarlands.svg"
+                  alt=""
+                />
+                <h5>Shrubs</h5>
+              </div>
+              <div class="cta-item">
+                <img
+                  src="/assets/chrismasinstallationlight/WreathsGarlands.svg"
+                  alt=""
+                />
+                <h5>Railings</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GET A QUOTES -->
+      <section id="getaquote">
+        <div class="getaquote__desc">
+          <h2>GET A SAME DAY HOLIDAY LIGHTING QUOTE</h2>
+          <p>
+            We design, install and remove your holiday lights so you don't have
+            to. Holiday lights done right.
+          </p>
+        </div>
+        <div id="formContainer" class="formcontainer cil__form">
+          <p class="booking--title cil__form-title">Get a Free Quote</p>
+          <form class="zapierform redform">
+            <div class="field name-field">
+              <div class="input-field">
+                <input type="text" placeholder="Name" class="name" />
+              </div>
+              <span class="required">required</span>
+            </div>
+
+            <div class="field email-field">
+              <div class="input-field">
+                <input type="email" placeholder="Email" class="email" />
+              </div>
+              <span class="required">required</span>
+            </div>
+
+            <div class="field number-field">
+              <div class="input-field">
+                <input type="number" placeholder="Phone" class="phone" oninput="this.value = this.value.replace(/[^0-9]/g, '');" />
+              </div>
+              <span class="required">required</span>
+            </div>
+
+            <div class="field city-field">
+              <div class="input-field">
+                <input type="text" placeholder="City" class="city" />
+              </div>
+              <span class="required">required</span>
+            </div>
+
+            <input type="checkbox" name="agree3" id="agree3" class="agree" />
+            <label class="IagreeLabel" for="agree3"
+              >I agree to be contacted by Pure Shine</label
+            >
+
+            <div class="field button-field input-field">
+              <input type="submit" value="Get a quote" />
+            </div>
+          </form>
+          <p class="formsubmitedmsg">
+            Thanks for submitting the form. We will get back to you shortly!
+          </p>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="cil-footer">
+        <img
+          class="greeandredlogo"
+          src="/assets/chrismasinstallationlight/pureshinewhite.png"
+          alt="logo"
+        />
+        <div class="contactWrraper">
+          <p>
+            Proudly providing window cleaning services to Hamilton, Burlington,
+            <br />
+            Oakville and the surrounding areas of GTA since 2021.
+          </p>
+          <a href="#formContainer"
+            ><button class="btn btn--transparent footer-btn">
+              free quote
+            </button></a
+          >
+          <div class="contact-box">
+            <img
+              src="/assets/chrismasinstallationlight/phone-solid.svg"
+              alt="phone icon"
+            />
+            <a href="tel:905-951-5935">905-951-5935</a>
+          </div>
+          <div class="contact-box">
+            <img
+              src="/assets/chrismasinstallationlight/envelope-solid.svg"
+              alt="envelope-solid icon"
+            />
+            <a href="mailto:info@pureshineservices.com"
+              >info@pureshineservices.com</a
+            >
+          </div>
+          <div class="contact-box social-media">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=100091786626273"
+              ><img
+                src="/assets/chrismasinstallationlight/facebook.svg"
+                alt="facebook icon"
+            /></a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/pureshine.services/"
+              ><img
+                src="/assets/chrismasinstallationlight/instagram.svg"
+                alt="instagram icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      type="text/javascript"
+      id="hs-script-loader"
+      async
+      defer
+      src="//js.hs-scripts.com/24468008.js"
+    ></script>
+  </body>
+</html>
